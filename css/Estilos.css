@@ -235,9 +235,9 @@
 
 .jdm {
     width: 300px;
-    margin-top: 3rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-top: 2.3rem;
+    margin-left: 2.3rem;
+    margin-right: 2.3rem;
     transition: box-shadow 100ms;
     transform: scale(1rem, 1rem);
 }
@@ -254,9 +254,9 @@
 
 .americanos {
     width: 300px;
-    margin-bottom: 3rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-bottom: 2.3rem;
+    margin-left: 2.3rem;
+    margin-right: 2.3rem;
 }
 
 .americanos:hover {
@@ -271,9 +271,9 @@
 
 .europeos {
     width: 300px;
-    margin-top: 3rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-top: 2.3rem;
+    margin-left: 2.3rem;
+    margin-right: 2.3rem;
 }
 
 .europeos:hover {
@@ -438,8 +438,15 @@
     display: inline-block;
     height: 270px;
     width: 270px;
+    border-top: 1px solid black;
 }
 
+.fotoUno {
+    display: inline-block;
+    height: 270px;
+    width: 270px;
+    border-bottom: 1px solid black;
+}
 
 /*MAIN ENCARGOS*/
 
