@@ -11,6 +11,7 @@
 /*MAIN INDEX*/
 .mainIndex {
     height: 263.7vh;
+    @include aliniar (center, flex-end);
     @media screen and (max-width: 768px) {
         height: 438.7vh;
     }
@@ -18,12 +19,12 @@
         .divProductos {
             .divUnoMain {
                 background-color: map-get($map: $otros-colores, $key: negro-trasnparente);
-                color: map-get($map: $otros-colores, $key:negro );
+                color: $cuarto-color;
                 .tituloPrincipal {
                     font-size: 2.7rem;
                     font-weight: 900;
                     -webkit-text-stroke: 2px $segundo-color;
-                    text-shadow: 0 0 5px map-get($map: $otros-colores, $key:negro ), 0 0 25px map-get($map: $otros-colores, $key:negro ), 0 0 50px map-get($map: $otros-colores, $key:negro );
+                    text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
                 }
             }
             .divTipoDos {
@@ -47,11 +48,11 @@
                             margin-right: 16%;
                         }
                         .titulosIndex {
-                            color: map-get($map: $otros-colores, $key:negro );
+                            color: $cuarto-color;
                             font-size: 1.6rem;
                             font-weight: 900;
                             -webkit-text-stroke: 1px $segundo-color;
-                            text-shadow: 0 0 5px map-get($map: $otros-colores, $key:negro ), 0 0 25px map-get($map: $otros-colores, $key:negro );      
+                            text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color;      
                         }
                     }
                     .divDescripcionIndex {
@@ -64,7 +65,7 @@
                             font-size: 1.1rem;
                             font-weight: 400;
                             color: $segundo-color;
-                            text-shadow: 0 0 5px map-get($map: $otros-colores, $key:negro );
+                            text-shadow: 0 0 5px $cuarto-color;
                         }
                     }
                 }
@@ -72,17 +73,17 @@
         }
         .divUbicacion {
             .divUbicacionText {
-                background-color: rgba(0, 0, 0, 0.356);
+                background-color: map-get($map: $otros-colores, $key: negro-trasnparente);
                 border-radius: 1%;
                 .divUbicacionTitulo {
                     height: 50%;
                     .divUbicacionTitulo {
                         .ubicacionTitulo {
-                            color: map-get($map: $otros-colores, $key:negro );
+                            color: $cuarto-color;
                             -webkit-text-stroke: 1.5px $segundo-color;
                             font-size: 2rem;
                             font-weight: 900;
-                            text-shadow: 0 0 5px map-get($map: $otros-colores, $key:negro ), 0 0 25px map-get($map: $otros-colores, $key:negro );
+                            text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color;
                         }
                     }
                 }
@@ -92,7 +93,7 @@
                 .ubicacionDescripcion {
                     color: $segundo-color;
                     font-weight: 900;
-                    text-shadow: 0 0 5px map-get($map: $otros-colores, $key:negro );
+                    text-shadow: 0 0 5px $cuarto-color;
                 }
             }
             .divUbicacionGoogle {
@@ -111,13 +112,14 @@
 /*MAIN PRODUCTOS*/
 .mainProductos {
     height: 273vh;
+    @include aliniar (center, flex-end);
     @media screen and (max-width: 768px) {
         height: 393vh;
     }
     .divTotalProductos {
         .divIntroduccion {
             margin-top: 7rem;
-            background-color: rgba(0, 0, 0, 0.356);
+            background-color: map-get($map: $otros-colores, $key: negro-trasnparente);
             height: 20vh;
             width: 96%;
             border-radius: 1%;
@@ -130,7 +132,7 @@
             }
             .aclaracion {
                 text-decoration: none;
-                color: #f0d6fc;
+                color: map-get($map: $otros-colores, $key: blanco);
                 text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
                 @media screen and (max-width: 768px) {
                     font-size: 85%;
@@ -175,7 +177,7 @@
             }
         }
         .divProximamente {
-            background-color: rgba(0, 0, 0, 0.356);
+            background-color: map-get($map: $otros-colores, $key: negro-trasnparente);
             width: 96%;
             .proximamente {
                 margin-top: 1rem;
@@ -220,7 +222,7 @@
     .divTotalGaleria {
         .divTituloGaleria {
             color: $cuarto-color;
-            background-color: rgba(0, 0, 0, 0.356);
+            background-color: map-get($map: $otros-colores, $key: negro-trasnparente);
             .tituloGaleria {
                 font-size: 2.7rem;
                 font-weight: 900;
@@ -294,6 +296,7 @@
     display: flex;
     flex-wrap: wrap;
     height: 152vh;
+    @include aliniar (center, center);
     @media (max-width: 768px) {
         height: 100%;
     }
@@ -311,7 +314,7 @@
             }
             .respuesta {
                 font-weight: 700;
-                color: #f0d6fc;
+                color: map-get($map: $otros-colores, $key: blanco);
                 width: 95%;
                 text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
             }
@@ -328,7 +331,7 @@
                 }
                 .direccion {
                     font-size: 1.1rem;
-                    color: #f0d6fc;
+                    color: map-get($map: $otros-colores, $key: blanco);
                     text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
                 }
             }
@@ -343,9 +346,9 @@
                     }
                 }
                 .mapa {
-                    border: 2px solid #f0d6fc;
+                    border: 2px solid map-get($map: $otros-colores, $key: blanco);
                     height: 5rem;
-                    background-color: #eeebee;
+                    background-color: $tercer-color;
                 }
             }
         }
@@ -360,6 +363,7 @@
     display: flex;
     flex-wrap: wrap;
     height:100vh;
+    @include aliniar (center, center);
     @media (max-width: 768px) {
         height: 100%;
         flex-direction: row-reverse;
@@ -455,7 +459,7 @@
             }
         }
         .introduccion {
-            background-color: rgba(0, 0, 0, 0.356);
+            background-color: map-get($map: $otros-colores, $key: negro-trasnparente);
             border-radius: 1%;
             .divTextContacto {
                 height: 50%;
@@ -473,7 +477,7 @@
             .divDescripcion {
                 height: 50%;
                 .textDescripcion {
-                    color: #f0d6fc;
+                    color: map-get($map: $otros-colores, $key: blanco);
                     font-weight: 900;
                     transition: text-shadow 50ms;
                     &:hover {

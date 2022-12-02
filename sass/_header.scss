@@ -5,28 +5,28 @@
         z-index: 1;
         position: fixed;
         top: 0%;
-        background-color: rgba(0, 0, 0, 0.849);
+        background-color: map-get($map: $otros-colores, $key: negro-trasnparente);
         .divNav {
             .anclaLogo {
                 .logoHeader {
                     width: 260px;
-                    background-color: rgba(0, 0, 0, 0.849);
+                    background-color: map-get($map: $otros-colores, $key: negro-trasnparente);
                 }
             }
             .navbar-toggler {
-                background-color: #dbb6ee;
+                background-color: $segundo-color;
             }
             .divlis {
                 .lista {
                     .listas {
                         .letraNav {
                             text-decoration: none;
-                            background-color: #dbb6ee;
+                            background-color: $segundo-color;
                             font-size: 1.3rem;
                             font-weight: 1000;
                             color: black;
                             &:hover {
-                                text-shadow: 0 0 5px #7e4ca5ee, 0 0 25px #7e4ca5ee;
+                                text-shadow: 0 0 5px $primer-color, 0 0 25px $primer-color;
                             }
                         }
                     }

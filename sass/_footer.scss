@@ -2,39 +2,39 @@
 
 
 .contenedorFooter {
-    background-color: #dbb6ee;
-    text-decoration: black;
+    background-color: map-get($map: $otros-colores, $key: gris);
+    text-decoration: $cuarto-color;
     .divContFooter {
         display: flex;
         align-items: center;
         .divRedes {
-            color: black;
+            color: $cuarto-color;
             .redes {
                 font-size: 1.1rem;
                 &:hover {
-                    text-shadow: 0 0 5px #7e4ca5ee, 0 0 25px #7e4ca5ee;
+                    text-shadow: 0 0 5px $primer-color, 0 0 25px $primer-color;
                 }
             }
             .divIconos {
                 .whatsapp {
-                    color: black;
+                    color: $cuarto-color;
                 }
                 .instagram {
-                    color: black;
+                    color: $cuarto-color;
                 }
                 .email {
-                    color: black;
+                    color: $cuarto-color;
                 }
             }
         }
         .divDerechos {
             justify-content: center;
-            text-decoration: black;
+            text-decoration: $cuarto-color;
             &:hover {
-                text-shadow: 0 0 5px #7e4ca5ee, 0 0 25px #7e4ca5ee;
+                text-shadow: 0 0 5px $primer-color, 0 0 25px $primer-color;
             }
             .derechos {
-                color: black;
+                color: $cuarto-color;
                 margin-top: 2%;
                 font-size: 0.7rem;
             }
