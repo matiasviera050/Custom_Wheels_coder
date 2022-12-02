@@ -1,0 +1,486 @@
+/* COMIENZO MAIN */
+
+.contenedorMain {
+    background-image: url(../assets/imagenes/BACKGROUND.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/*MAIN INDEX*/
+.mainIndex {
+    height: 263.7vh;
+    @media screen and (max-width: 768px) {
+        height: 438.7vh;
+    }
+    .divTotalIndex {
+        .divProductos {
+            .divUnoMain {
+                background-color: map-get($map: $otros-colores, $key: negro-trasnparente);
+                color: map-get($map: $otros-colores, $key:negro );
+                .tituloPrincipal {
+                    font-size: 2.7rem;
+                    font-weight: 900;
+                    -webkit-text-stroke: 2px $segundo-color;
+                    text-shadow: 0 0 5px map-get($map: $otros-colores, $key:negro ), 0 0 25px map-get($map: $otros-colores, $key:negro ), 0 0 50px map-get($map: $otros-colores, $key:negro );
+                }
+            }
+            .divTipoDos {
+                background-color: $primer-color;
+                border-top: 2px solid $segundo-color;
+                border-left: 2px solid $segundo-color;
+                border-right: 2px solid $segundo-color;
+                @media screen and (max-width: 768px) {
+                    margin-bottom: 4%;
+                    border: 2px solid $segundo-color;
+                }
+                .divImgProductos {
+                    .ImgIndex {
+                        width: 100%;
+                    }
+                }
+                .divTextIndex {
+                    .divTituloIndex {
+                        height: 50%;
+                        @media screen and (max-width: 768px) {
+                            margin-right: 16%;
+                        }
+                        .titulosIndex {
+                            color: map-get($map: $otros-colores, $key:negro );
+                            font-size: 1.6rem;
+                            font-weight: 900;
+                            -webkit-text-stroke: 1px $segundo-color;
+                            text-shadow: 0 0 5px map-get($map: $otros-colores, $key:negro ), 0 0 25px map-get($map: $otros-colores, $key:negro );      
+                        }
+                    }
+                    .divDescripcionIndex {
+                        height: 50%;
+                        @media screen and (max-width: 768px) {
+                            height: 40%;
+                            margin-bottom: 3%;
+                        }
+                        .descripcionIndex {
+                            font-size: 1.1rem;
+                            font-weight: 400;
+                            color: $segundo-color;
+                            text-shadow: 0 0 5px map-get($map: $otros-colores, $key:negro );
+                        }
+                    }
+                }
+            }
+        }
+        .divUbicacion {
+            .divUbicacionText {
+                background-color: rgba(0, 0, 0, 0.356);
+                border-radius: 1%;
+                .divUbicacionTitulo {
+                    height: 50%;
+                    .divUbicacionTitulo {
+                        .ubicacionTitulo {
+                            color: map-get($map: $otros-colores, $key:negro );
+                            -webkit-text-stroke: 1.5px $segundo-color;
+                            font-size: 2rem;
+                            font-weight: 900;
+                            text-shadow: 0 0 5px map-get($map: $otros-colores, $key:negro ), 0 0 25px map-get($map: $otros-colores, $key:negro );
+                        }
+                    }
+                }
+            }
+            .divUbicacionDescripcion {
+                height: 50%;
+                .ubicacionDescripcion {
+                    color: $segundo-color;
+                    font-weight: 900;
+                    text-shadow: 0 0 5px map-get($map: $otros-colores, $key:negro );
+                }
+            }
+            .divUbicacionGoogle {
+                .mapa {
+                }
+            }
+        }
+    }
+}
+
+
+/*TERMINA MAIN INDEX
+
+....................
+
+/*MAIN PRODUCTOS*/
+.mainProductos {
+    height: 273vh;
+    @media screen and (max-width: 768px) {
+        height: 393vh;
+    }
+    .divTotalProductos {
+        .divIntroduccion {
+            margin-top: 7rem;
+            background-color: rgba(0, 0, 0, 0.356);
+            height: 20vh;
+            width: 96%;
+            border-radius: 1%;
+            .titulo {
+                color: $cuarto-color;
+                font-size: 2.5rem;
+                font-weight: 900;
+                -webkit-text-stroke: 1px $segundo-color;
+                text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
+            }
+            .aclaracion {
+                text-decoration: none;
+                color: #f0d6fc;
+                text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
+                @media screen and (max-width: 768px) {
+                    font-size: 85%;
+                }
+                .anclaEncargos {
+                    text-decoration: none;
+                }
+            }
+        }
+        .divAutos {
+            width: 80%;
+            .divAutosTipoUno {
+                display: inline;
+                background-color: $primer-color;
+                width: 30rem;
+                .jdm {
+                    width: 300px;
+                    transition: box-shadow 100ms;
+                    transform: scale(1rem, 1rem);
+                    &:hover {
+                        box-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
+                    }
+                }
+                .europeos {
+                    text-decoration: none;
+                    width: 300px;
+                    &:hover {
+                        box-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
+                    }
+                }
+            }
+            .divAutosTipoDos {
+                display: inline;
+                width: 30rem;
+                background-color: $primer-color;
+                .americanos {
+                    width: 300px;
+                    &:hover {
+                        box-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
+                    }
+                }
+            }
+        }
+        .divProximamente {
+            background-color: rgba(0, 0, 0, 0.356);
+            width: 96%;
+            .proximamente {
+                margin-top: 1rem;
+                text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
+                font-size: 500%;
+                font-weight: 900;
+                color: $cuarto-color;
+                -webkit-text-stroke: 2px $segundo-color;
+                @media screen and (max-width: 768px) {
+                    width: 60%;
+                    font-size: 193%;
+                    -webkit-text-stroke: 1px $segundo-color;
+                }
+            }
+        }
+    }
+}
+
+
+.mainProductos {
+    .divTotalProductos {
+        .divIntroduccion {
+            @media screen and (max-width: 768px) {
+                width: 84%;
+            }
+        }
+    }
+}
+/*TERMINA MAIN PRODUCTOS
+
+.........................
+
+/*COMIENZA MAIN GALERIA*/
+.mainGaleria {
+    height: 192vh;
+    @media screen and (max-weight: 768px) {
+        .mainGaleria {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .divTotalGaleria {
+        .divTituloGaleria {
+            color: $cuarto-color;
+            background-color: rgba(0, 0, 0, 0.356);
+            .tituloGaleria {
+                font-size: 2.7rem;
+                font-weight: 900;
+                -webkit-text-stroke: 1px $segundo-color;
+            }
+        }
+        .divGaleriaVideos {
+            background-color: $primer-color;
+            .divTituloVideos {
+                color: $cuarto-color;
+                .tituloVideo {
+                    background-color: $segundo-color;
+                    font-size: 2.1rem;
+                    font-weight: 900;
+                    -webkit-text-stroke: 1px $segundo-color;
+                    text-shadow: 0 0 5px $cuarto-color;
+                }
+            }
+            .divVideos {
+                background-color: $segundo-color;
+                .videos {
+                    width: 420px;
+                    height: 260px;
+                    margin-left: 0.5%;
+                    margin-right: 0.5%;
+                    margin-top: 1%;
+                    margin-bottom: 1%;
+                }
+            }
+        }
+        .divGaleriaImagenes {
+            background-color: $primer-color;
+            margin-left: 0.01%;
+            margin-right: 0.01%;
+            .divTituloImagenes {
+                color: $cuarto-color;
+                .tituloImagenes {
+                    background-color: $segundo-color;
+                    font-size: 2.1rem;
+                    font-weight: 900;
+                    -webkit-text-stroke: 1px $segundo-color;
+                    text-shadow: 0 0 5px $cuarto-color;
+                }
+            }
+            .divTotalImagenes {
+                .divImagenes {
+                    background-color: $segundo-color;
+                    border: 1.5px solid $cuarto-color;
+                    width: 24%;
+                    margin-left: 0.5%;
+                    margin-right: 0.5%;
+                    .fotoGaleria {
+                        width: 300px;
+                    }
+                }
+            } 
+        }
+    }
+}
+
+
+
+
+   
+/*TERMINA MAIN GALERIA
+
+...........................
+
+/*COMIENZA MAIN ACERCA DE*/
+.mainAcerca {
+    display: flex;
+    flex-wrap: wrap;
+    height: 152vh;
+    @media (max-width: 768px) {
+        height: 100%;
+    }
+    .divTotalAcerca {
+        .divUnoAcerca {
+            background-color: $primer-color;   
+            margin-top: 10.5rem;
+            .preguntas {
+                width: 80%;
+                font-size: 200%;
+                font-weight: 900;
+                color: $cuarto-color;
+                -webkit-text-stroke: 1.3px $segundo-color;
+                text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
+            }
+            .respuesta {
+                font-weight: 700;
+                color: #f0d6fc;
+                width: 95%;
+                text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
+            }
+        }
+        .divDosAcerca { 
+            margin-top: 0%;
+            background-color: $primer-color;
+            .lugarEscrito {
+                .estamos {
+                    font-size: 1.8rem;
+                    font-weight: 900;
+                    -webkit-text-stroke: 1.3px $segundo-color;
+                    text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
+                }
+                .direccion {
+                    font-size: 1.1rem;
+                    color: #f0d6fc;
+                    text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
+                }
+            }
+            .lugarVisual {
+                background-color: $segundo-color;
+                .estudio {
+                    background-color: $cuarto-color;
+                    transition: 100ms;
+                    &:hover {
+                        box-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color;
+                    
+                    }
+                }
+                .mapa {
+                    border: 2px solid #f0d6fc;
+                    height: 5rem;
+                    background-color: #eeebee;
+                }
+            }
+        }
+    }
+}   
+/*TERMINA MAIN ACERCA DE
+
+...........................
+
+/*COMIENZA MAIN ENCARGOS*/
+.mainContacto {
+    display: flex;
+    flex-wrap: wrap;
+    height:100vh;
+    @media (max-width: 768px) {
+        height: 100%;
+        flex-direction: row-reverse;
+    }
+    .divisorTotalForm {
+        margin-top: 7.4rem;
+        .divisorForm {
+            background-color: $primer-color;
+            height: 76%;
+            .divUnoform {
+                .textFormulario {
+                    color: $cuarto-color;
+                    font-size: 1.8rem;
+                    font-weight: 900;
+                    -webkit-text-stroke: 1px $segundo-color;
+                }
+            }
+            .divDosform {
+                .respuestaUno {
+                    transition: box-shadow 80ms;
+                    &:hover {
+                        box-shadow: 0 0 25px $cuarto-color;
+                        background-color: $segundo-color;
+                    }
+                }
+            }
+            .divTresform {
+                .respuestaDos {
+                    transition: box-shadow 80ms;
+                    &:hover {
+                        box-shadow: 0 0 25px $cuarto-color;
+                        background-color: $segundo-color;
+                    
+                    }
+                }
+            }
+            .divCuatroform {
+                .divLabel {
+                    
+                }
+                .divBoton {
+                    .tener {
+                        transition: box-shadow 80ms;
+                        &:hover {
+                            box-shadow: 0 0 25px $cuarto-color;
+                            background-color: $segundo-color;
+                        }
+                    }
+                }
+            }
+            .divCincoform {
+                .preguntaUno {
+                    transition: text-shadow 80ms;
+                    &:hover {
+                        text-shadow: 0 0 25px $cuarto-color;
+                    }
+                }
+                .respuestaTres {
+                    transition: box-shadow 80ms;
+                    &:hover {
+                        box-shadow: 0 0 25px $cuarto-color;
+                        background-color: $segundo-color;
+                    }
+                }
+            }
+            .divSeisform {
+                
+            }
+            .divSieteform {
+                .respuestaCuatro {
+                    transition: box-shadow 80ms, background-color 80ms;
+                    &:hover {
+                        box-shadow: 0 0 25px $cuarto-color;
+                        background-color: $segundo-color;
+                    }
+                }
+            }
+            .divOchoform {
+                .botonUno {
+                    transition: background-color 300ms, box-shadow 500ms;
+                    &:hover {
+                        background-color: red;
+                        box-shadow: 0 0 5px red, 0 0 25px red, 0 0 50px red, 0 0 200px red;
+                    }
+                }
+                .botonDos {
+                    transition: background-color 300ms, box-shadow 500ms;
+                    &:hover {
+                        background-color: green;
+                        box-shadow: 0 0 5px green, 0 0 25px green, 0 0 50px green ,0 0 200px green;
+                    }
+                }
+            }
+        }
+        .introduccion {
+            background-color: rgba(0, 0, 0, 0.356);
+            border-radius: 1%;
+            .divTextContacto {
+                height: 50%;
+                .textContacto {
+                    color: $cuarto-color;
+                    font-size: 2.7rem;
+                    font-weight: 800;
+                    -webkit-text-stroke: 2px $segundo-color;
+                    transition: text-shadow 50ms;
+                    &:hover {
+                        text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
+                    }
+                }
+            }
+            .divDescripcion {
+                height: 50%;
+                .textDescripcion {
+                    color: #f0d6fc;
+                    font-weight: 900;
+                    transition: text-shadow 50ms;
+                    &:hover {
+                        text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
+                    }
+                }
+            }
+        }
+    }
+}

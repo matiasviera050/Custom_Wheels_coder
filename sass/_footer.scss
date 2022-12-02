@@ -1,0 +1,49 @@
+
+
+
+.contenedorFooter {
+    background-color: #dbb6ee;
+    text-decoration: black;
+    .divContFooter {
+        display: flex;
+        align-items: center;
+        .divRedes {
+            color: black;
+            .redes {
+                font-size: 1.1rem;
+                &:hover {
+                    text-shadow: 0 0 5px #7e4ca5ee, 0 0 25px #7e4ca5ee;
+                }
+            }
+            .divIconos {
+                .whatsapp {
+                    color: black;
+                }
+                .instagram {
+                    color: black;
+                }
+                .email {
+                    color: black;
+                }
+            }
+        }
+        .divDerechos {
+            justify-content: center;
+            text-decoration: black;
+            &:hover {
+                text-shadow: 0 0 5px #7e4ca5ee, 0 0 25px #7e4ca5ee;
+            }
+            .derechos {
+                color: black;
+                margin-top: 2%;
+                font-size: 0.7rem;
+            }
+            .logoFooter {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 180px;
+            }
+        }
+    }
+}

@@ -1,0 +1,563 @@
+/*mapas*/
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.text-d-none {
+  text-decoration: none;
+}
+
+.rounded {
+  border: 2px solid #dbb6ee;
+}
+
+.rounded {
+  color: black;
+}
+
+.colorSecundario {
+  color: #f0d6fc;
+}
+
+.borderBottom {
+  border-bottom: 2px solid #dbb6ee;
+}
+
+.textosSecundarios {
+  color: black;
+  -webkit-text-stroke: 1.5px #dbb6ee;
+  font-size: 2.4rem;
+  font-weight: 900;
+  text-shadow: 0 0 5px black, 0 0 25px black;
+}
+
+.titulosSecciones {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 900;
+  background-color: #dbb6ee;
+}
+
+.marginLeft {
+  margin-left: 17%;
+}
+
+.contenedorArriba .contNav {
+  z-index: 1;
+  position: fixed;
+  top: 0%;
+  background-color: rgba(0, 0, 0, 0.849);
+}
+.contenedorArriba .contNav .divNav .anclaLogo .logoHeader {
+  width: 260px;
+  background-color: rgba(0, 0, 0, 0.849);
+}
+.contenedorArriba .contNav .divNav .navbar-toggler {
+  background-color: #dbb6ee;
+}
+.contenedorArriba .contNav .divNav .divlis .lista .listas .letraNav {
+  text-decoration: none;
+  background-color: #dbb6ee;
+  font-size: 1.3rem;
+  font-weight: 1000;
+  color: black;
+}
+.contenedorArriba .contNav .divNav .divlis .lista .listas .letraNav:hover {
+  text-shadow: 0 0 5px rgba(126, 76, 165, 0.9333333333), 0 0 25px rgba(126, 76, 165, 0.9333333333);
+}
+.contenedorArriba .contNav .divNav .divcontacto .anclaImgEncargos .imagenEncargos {
+  width: 96px;
+}
+
+/* COMIENZO MAIN */
+.contenedorMain {
+  background-image: url(../assets/imagenes/BACKGROUND.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*MAIN INDEX*/
+.mainIndex {
+  height: 263.7vh;
+}
+@media screen and (max-width: 768px) {
+  .mainIndex {
+    height: 438.7vh;
+  }
+}
+.mainIndex .divTotalIndex .divProductos .divUnoMain {
+  background-color: rgba(0, 0, 0, 0.356);
+}
+.mainIndex .divTotalIndex .divProductos .divUnoMain .tituloPrincipal {
+  font-size: 2.7rem;
+  font-weight: 900;
+  -webkit-text-stroke: 2px #dbb6ee;
+  text-shadow: 0 0 5px, 0 0 25px, 0 0 50px;
+}
+.mainIndex .divTotalIndex .divProductos .divTipoDos {
+  background-color: rgba(126, 76, 165, 0.9333333333);
+  border-top: 2px solid #dbb6ee;
+  border-left: 2px solid #dbb6ee;
+  border-right: 2px solid #dbb6ee;
+}
+@media screen and (max-width: 768px) {
+  .mainIndex .divTotalIndex .divProductos .divTipoDos {
+    margin-bottom: 4%;
+    border: 2px solid #dbb6ee;
+  }
+}
+.mainIndex .divTotalIndex .divProductos .divTipoDos .divImgProductos .ImgIndex {
+  width: 100%;
+}
+.mainIndex .divTotalIndex .divProductos .divTipoDos .divTextIndex .divTituloIndex {
+  height: 50%;
+}
+@media screen and (max-width: 768px) {
+  .mainIndex .divTotalIndex .divProductos .divTipoDos .divTextIndex .divTituloIndex {
+    margin-right: 16%;
+  }
+}
+.mainIndex .divTotalIndex .divProductos .divTipoDos .divTextIndex .divTituloIndex .titulosIndex {
+  font-size: 1.6rem;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #dbb6ee;
+  text-shadow: 0 0 5px, 0 0 25px;
+}
+.mainIndex .divTotalIndex .divProductos .divTipoDos .divTextIndex .divDescripcionIndex {
+  height: 50%;
+}
+@media screen and (max-width: 768px) {
+  .mainIndex .divTotalIndex .divProductos .divTipoDos .divTextIndex .divDescripcionIndex {
+    height: 40%;
+    margin-bottom: 3%;
+  }
+}
+.mainIndex .divTotalIndex .divProductos .divTipoDos .divTextIndex .divDescripcionIndex .descripcionIndex {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #dbb6ee;
+  text-shadow: 0 0 5px;
+}
+.mainIndex .divTotalIndex .divUbicacion .divUbicacionText {
+  background-color: rgba(0, 0, 0, 0.356);
+  border-radius: 1%;
+}
+.mainIndex .divTotalIndex .divUbicacion .divUbicacionText .divUbicacionTitulo {
+  height: 50%;
+}
+.mainIndex .divTotalIndex .divUbicacion .divUbicacionText .divUbicacionTitulo .divUbicacionTitulo .ubicacionTitulo {
+  -webkit-text-stroke: 1.5px #dbb6ee;
+  font-size: 2rem;
+  font-weight: 900;
+  text-shadow: 0 0 5px, 0 0 25px;
+}
+.mainIndex .divTotalIndex .divUbicacion .divUbicacionDescripcion {
+  height: 50%;
+}
+.mainIndex .divTotalIndex .divUbicacion .divUbicacionDescripcion .ubicacionDescripcion {
+  color: #dbb6ee;
+  font-weight: 900;
+  text-shadow: 0 0 5px;
+}
+/*TERMINA MAIN INDEX
+
+....................
+
+/*MAIN PRODUCTOS*/
+.mainProductos {
+  height: 273vh;
+}
+@media screen and (max-width: 768px) {
+  .mainProductos {
+    height: 393vh;
+  }
+}
+.mainProductos .divTotalProductos .divIntroduccion {
+  margin-top: 7rem;
+  background-color: rgba(0, 0, 0, 0.356);
+  height: 20vh;
+  width: 96%;
+  border-radius: 1%;
+}
+.mainProductos .divTotalProductos .divIntroduccion .titulo {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #dbb6ee;
+  text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+}
+.mainProductos .divTotalProductos .divIntroduccion .aclaracion {
+  text-decoration: none;
+  color: #f0d6fc;
+  text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+}
+@media screen and (max-width: 768px) {
+  .mainProductos .divTotalProductos .divIntroduccion .aclaracion {
+    font-size: 85%;
+  }
+}
+.mainProductos .divTotalProductos .divIntroduccion .aclaracion .anclaEncargos {
+  text-decoration: none;
+}
+.mainProductos .divTotalProductos .divAutos {
+  width: 80%;
+}
+.mainProductos .divTotalProductos .divAutos .divAutosTipoUno {
+  display: inline;
+  background-color: rgba(126, 76, 165, 0.9333333333);
+  width: 30rem;
+}
+.mainProductos .divTotalProductos .divAutos .divAutosTipoUno .jdm {
+  width: 300px;
+  transition: box-shadow 100ms;
+  transform: scale(1rem, 1rem);
+}
+.mainProductos .divTotalProductos .divAutos .divAutosTipoUno .jdm:hover {
+  box-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+}
+.mainProductos .divTotalProductos .divAutos .divAutosTipoUno .europeos {
+  text-decoration: none;
+  width: 300px;
+}
+.mainProductos .divTotalProductos .divAutos .divAutosTipoUno .europeos:hover {
+  box-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+}
+.mainProductos .divTotalProductos .divAutos .divAutosTipoDos {
+  display: inline;
+  width: 30rem;
+  background-color: rgba(126, 76, 165, 0.9333333333);
+}
+.mainProductos .divTotalProductos .divAutos .divAutosTipoDos .americanos {
+  width: 300px;
+}
+.mainProductos .divTotalProductos .divAutos .divAutosTipoDos .americanos:hover {
+  box-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+}
+.mainProductos .divTotalProductos .divProximamente {
+  background-color: rgba(0, 0, 0, 0.356);
+  width: 96%;
+}
+.mainProductos .divTotalProductos .divProximamente .proximamente {
+  margin-top: 1rem;
+  text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+  font-size: 500%;
+  font-weight: 900;
+  color: black;
+  -webkit-text-stroke: 2px #dbb6ee;
+}
+@media screen and (max-width: 768px) {
+  .mainProductos .divTotalProductos .divProximamente .proximamente {
+    width: 60%;
+    font-size: 193%;
+    -webkit-text-stroke: 1px #dbb6ee;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainProductos .divTotalProductos .divIntroduccion {
+    width: 84%;
+  }
+}
+
+/*TERMINA MAIN PRODUCTOS
+
+.........................
+
+/*COMIENZA MAIN GALERIA*/
+.mainGaleria {
+  height: 192vh;
+}
+@media screen and (max-weight: 768px) {
+  .mainGaleria .mainGaleria {
+    display: flex;
+    justify-content: center;
+  }
+}
+.mainGaleria .divTotalGaleria .divTituloGaleria {
+  color: black;
+  background-color: rgba(0, 0, 0, 0.356);
+}
+.mainGaleria .divTotalGaleria .divTituloGaleria .tituloGaleria {
+  font-size: 2.7rem;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #dbb6ee;
+}
+.mainGaleria .divTotalGaleria .divGaleriaVideos {
+  background-color: rgba(126, 76, 165, 0.9333333333);
+}
+.mainGaleria .divTotalGaleria .divGaleriaVideos .divTituloVideos {
+  color: black;
+}
+.mainGaleria .divTotalGaleria .divGaleriaVideos .divTituloVideos .tituloVideo {
+  background-color: #dbb6ee;
+  font-size: 2.1rem;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #dbb6ee;
+  text-shadow: 0 0 5px black;
+}
+.mainGaleria .divTotalGaleria .divGaleriaVideos .divVideos {
+  background-color: #dbb6ee;
+}
+.mainGaleria .divTotalGaleria .divGaleriaVideos .divVideos .videos {
+  width: 420px;
+  height: 260px;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.mainGaleria .divTotalGaleria .divGaleriaImagenes {
+  background-color: rgba(126, 76, 165, 0.9333333333);
+  margin-left: 0.01%;
+  margin-right: 0.01%;
+}
+.mainGaleria .divTotalGaleria .divGaleriaImagenes .divTituloImagenes {
+  color: black;
+}
+.mainGaleria .divTotalGaleria .divGaleriaImagenes .divTituloImagenes .tituloImagenes {
+  background-color: #dbb6ee;
+  font-size: 2.1rem;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #dbb6ee;
+  text-shadow: 0 0 5px black;
+}
+.mainGaleria .divTotalGaleria .divGaleriaImagenes .divTotalImagenes .divImagenes {
+  background-color: #dbb6ee;
+  border: 1.5px solid black;
+  width: 24%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
+.mainGaleria .divTotalGaleria .divGaleriaImagenes .divTotalImagenes .divImagenes .fotoGaleria {
+  width: 300px;
+}
+
+/*TERMINA MAIN GALERIA
+
+...........................
+
+/*COMIENZA MAIN ACERCA DE*/
+.mainAcerca {
+  display: flex;
+  flex-wrap: wrap;
+  height: 152vh;
+}
+@media (max-width: 768px) {
+  .mainAcerca {
+    height: 100%;
+  }
+}
+.mainAcerca .divTotalAcerca .divUnoAcerca {
+  background-color: rgba(126, 76, 165, 0.9333333333);
+  margin-top: 10.5rem;
+}
+.mainAcerca .divTotalAcerca .divUnoAcerca .preguntas {
+  width: 80%;
+  font-size: 200%;
+  font-weight: 900;
+  color: black;
+  -webkit-text-stroke: 1.3px #dbb6ee;
+  text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+}
+.mainAcerca .divTotalAcerca .divUnoAcerca .respuesta {
+  font-weight: 700;
+  color: #f0d6fc;
+  width: 95%;
+  text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+}
+.mainAcerca .divTotalAcerca .divDosAcerca {
+  margin-top: 0%;
+  background-color: rgba(126, 76, 165, 0.9333333333);
+}
+.mainAcerca .divTotalAcerca .divDosAcerca .lugarEscrito .estamos {
+  font-size: 1.8rem;
+  font-weight: 900;
+  -webkit-text-stroke: 1.3px #dbb6ee;
+  text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+}
+.mainAcerca .divTotalAcerca .divDosAcerca .lugarEscrito .direccion {
+  font-size: 1.1rem;
+  color: #f0d6fc;
+  text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+}
+.mainAcerca .divTotalAcerca .divDosAcerca .lugarVisual {
+  background-color: #dbb6ee;
+}
+.mainAcerca .divTotalAcerca .divDosAcerca .lugarVisual .estudio {
+  background-color: black;
+  transition: 100ms;
+}
+.mainAcerca .divTotalAcerca .divDosAcerca .lugarVisual .estudio:hover {
+  box-shadow: 0 0 5px black, 0 0 25px black;
+}
+.mainAcerca .divTotalAcerca .divDosAcerca .lugarVisual .mapa {
+  border: 2px solid #f0d6fc;
+  height: 5rem;
+  background-color: #eeebee;
+}
+
+/*TERMINA MAIN ACERCA DE
+
+...........................
+
+/*COMIENZA MAIN ENCARGOS*/
+.mainContacto {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+@media (max-width: 768px) {
+  .mainContacto {
+    height: 100%;
+    flex-direction: row-reverse;
+  }
+}
+.mainContacto .divisorTotalForm {
+  margin-top: 7.4rem;
+}
+.mainContacto .divisorTotalForm .divisorForm {
+  background-color: rgba(126, 76, 165, 0.9333333333);
+  height: 76%;
+}
+.mainContacto .divisorTotalForm .divisorForm .divUnoform .textFormulario {
+  color: black;
+  font-size: 1.8rem;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #dbb6ee;
+}
+.mainContacto .divisorTotalForm .divisorForm .divDosform .respuestaUno {
+  transition: box-shadow 80ms;
+}
+.mainContacto .divisorTotalForm .divisorForm .divDosform .respuestaUno:hover {
+  box-shadow: 0 0 25px black;
+  background-color: #dbb6ee;
+}
+.mainContacto .divisorTotalForm .divisorForm .divTresform .respuestaDos {
+  transition: box-shadow 80ms;
+}
+.mainContacto .divisorTotalForm .divisorForm .divTresform .respuestaDos:hover {
+  box-shadow: 0 0 25px black;
+  background-color: #dbb6ee;
+}
+.mainContacto .divisorTotalForm .divisorForm .divCuatroform .divBoton .tener {
+  transition: box-shadow 80ms;
+}
+.mainContacto .divisorTotalForm .divisorForm .divCuatroform .divBoton .tener:hover {
+  box-shadow: 0 0 25px black;
+  background-color: #dbb6ee;
+}
+.mainContacto .divisorTotalForm .divisorForm .divCincoform .preguntaUno {
+  transition: text-shadow 80ms;
+}
+.mainContacto .divisorTotalForm .divisorForm .divCincoform .preguntaUno:hover {
+  text-shadow: 0 0 25px black;
+}
+.mainContacto .divisorTotalForm .divisorForm .divCincoform .respuestaTres {
+  transition: box-shadow 80ms;
+}
+.mainContacto .divisorTotalForm .divisorForm .divCincoform .respuestaTres:hover {
+  box-shadow: 0 0 25px black;
+  background-color: #dbb6ee;
+}
+.mainContacto .divisorTotalForm .divisorForm .divSieteform .respuestaCuatro {
+  transition: box-shadow 80ms, background-color 80ms;
+}
+.mainContacto .divisorTotalForm .divisorForm .divSieteform .respuestaCuatro:hover {
+  box-shadow: 0 0 25px black;
+  background-color: #dbb6ee;
+}
+.mainContacto .divisorTotalForm .divisorForm .divOchoform .botonUno {
+  transition: background-color 300ms, box-shadow 500ms;
+}
+.mainContacto .divisorTotalForm .divisorForm .divOchoform .botonUno:hover {
+  background-color: red;
+  box-shadow: 0 0 5px red, 0 0 25px red, 0 0 50px red, 0 0 200px red;
+}
+.mainContacto .divisorTotalForm .divisorForm .divOchoform .botonDos {
+  transition: background-color 300ms, box-shadow 500ms;
+}
+.mainContacto .divisorTotalForm .divisorForm .divOchoform .botonDos:hover {
+  background-color: green;
+  box-shadow: 0 0 5px green, 0 0 25px green, 0 0 50px green, 0 0 200px green;
+}
+.mainContacto .divisorTotalForm .introduccion {
+  background-color: rgba(0, 0, 0, 0.356);
+  border-radius: 1%;
+}
+.mainContacto .divisorTotalForm .introduccion .divTextContacto {
+  height: 50%;
+}
+.mainContacto .divisorTotalForm .introduccion .divTextContacto .textContacto {
+  color: black;
+  font-size: 2.7rem;
+  font-weight: 800;
+  -webkit-text-stroke: 2px #dbb6ee;
+  transition: text-shadow 50ms;
+}
+.mainContacto .divisorTotalForm .introduccion .divTextContacto .textContacto:hover {
+  text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+}
+.mainContacto .divisorTotalForm .introduccion .divDescripcion {
+  height: 50%;
+}
+.mainContacto .divisorTotalForm .introduccion .divDescripcion .textDescripcion {
+  color: #f0d6fc;
+  font-weight: 900;
+  transition: text-shadow 50ms;
+}
+.mainContacto .divisorTotalForm .introduccion .divDescripcion .textDescripcion:hover {
+  text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+}
+
+.contenedorFooter {
+  background-color: #dbb6ee;
+  -webkit-text-decoration: black;
+          text-decoration: black;
+}
+.contenedorFooter .divContFooter {
+  display: flex;
+  align-items: center;
+}
+.contenedorFooter .divContFooter .divRedes {
+  color: black;
+}
+.contenedorFooter .divContFooter .divRedes .redes {
+  font-size: 1.1rem;
+}
+.contenedorFooter .divContFooter .divRedes .redes:hover {
+  text-shadow: 0 0 5px rgba(126, 76, 165, 0.9333333333), 0 0 25px rgba(126, 76, 165, 0.9333333333);
+}
+.contenedorFooter .divContFooter .divRedes .divIconos .whatsapp {
+  color: black;
+}
+.contenedorFooter .divContFooter .divRedes .divIconos .instagram {
+  color: black;
+}
+.contenedorFooter .divContFooter .divRedes .divIconos .email {
+  color: black;
+}
+.contenedorFooter .divContFooter .divDerechos {
+  justify-content: center;
+  -webkit-text-decoration: black;
+          text-decoration: black;
+}
+.contenedorFooter .divContFooter .divDerechos:hover {
+  text-shadow: 0 0 5px rgba(126, 76, 165, 0.9333333333), 0 0 25px rgba(126, 76, 165, 0.9333333333);
+}
+.contenedorFooter .divContFooter .divDerechos .derechos {
+  color: black;
+  margin-top: 2%;
+  font-size: 0.7rem;
+}
+.contenedorFooter .divContFooter .divDerechos .logoFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+}/*# sourceMappingURL=estilos.css.map */

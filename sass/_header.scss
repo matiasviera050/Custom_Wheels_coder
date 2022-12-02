@@ -1,0 +1,44 @@
+    
+    
+.contenedorArriba {
+    .contNav {
+        z-index: 1;
+        position: fixed;
+        top: 0%;
+        background-color: rgba(0, 0, 0, 0.849);
+        .divNav {
+            .anclaLogo {
+                .logoHeader {
+                    width: 260px;
+                    background-color: rgba(0, 0, 0, 0.849);
+                }
+            }
+            .navbar-toggler {
+                background-color: #dbb6ee;
+            }
+            .divlis {
+                .lista {
+                    .listas {
+                        .letraNav {
+                            text-decoration: none;
+                            background-color: #dbb6ee;
+                            font-size: 1.3rem;
+                            font-weight: 1000;
+                            color: black;
+                            &:hover {
+                                text-shadow: 0 0 5px #7e4ca5ee, 0 0 25px #7e4ca5ee;
+                            }
+                        }
+                    }
+                }
+            }
+            .divcontacto {
+                .anclaImgEncargos {
+                    .imagenEncargos {
+                        width: 96px;
+                    }
+                }
+            }
+        }
+    }
+}
