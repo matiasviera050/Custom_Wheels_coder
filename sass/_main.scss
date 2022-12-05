@@ -13,7 +13,7 @@
     height: 263.7vh;
     @include aliniar (center, flex-end);
     @media screen and (max-width: 768px) {
-        height: 438.7vh;
+        height: 427vh;
     }
     .divTotalIndex {
         .divProductos {
@@ -39,6 +39,9 @@
                 .divImgProductos {
                     .ImgIndex {
                         width: 100%;
+                        &:hover {
+                            box-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color;
+                        }
                     }
                 }
                 .divTextIndex {
@@ -114,7 +117,7 @@
     height: 273vh;
     @include aliniar (center, flex-end);
     @media screen and (max-width: 768px) {
-        height: 393vh;
+        height: 382vh;
     }
     .divTotalProductos {
         .divIntroduccion {
@@ -153,14 +156,14 @@
                     transition: box-shadow 100ms;
                     transform: scale(1rem, 1rem);
                     &:hover {
-                        box-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
+                        box-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color;
                     }
                 }
                 .europeos {
                     text-decoration: none;
                     width: 300px;
                     &:hover {
-                        box-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
+                        box-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color;
                     }
                 }
             }
@@ -171,7 +174,7 @@
                 .americanos {
                     width: 300px;
                     &:hover {
-                        box-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
+                        box-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color;
                     }
                 }
             }
@@ -213,11 +216,8 @@
 /*COMIENZA MAIN GALERIA*/
 .mainGaleria {
     height: 192vh;
-    @media screen and (max-weight: 768px) {
-        .mainGaleria {
-            display: flex;
-            justify-content: center;
-        }
+    @media screen and (max-width: 768px) {
+        height: 215rem;
     }
     .divTotalGaleria {
         .divTituloGaleria {
@@ -227,6 +227,11 @@
                 font-size: 2.7rem;
                 font-weight: 900;
                 -webkit-text-stroke: 1px $segundo-color;
+                @media screen and (max-width: 768px) {
+                    font-size: 2.4rem;
+                    font-weight: 900;
+                    -webkit-text-stroke: 0.7px $segundo-color;
+                }
             }
         }
         .divGaleriaVideos {
@@ -243,6 +248,12 @@
             }
             .divVideos {
                 background-color: $segundo-color;
+                display: flex;
+                flex-wrap: wrap;
+                @media screen and (max-width: 768px) {
+                    border-left: 8px solid $primer-color;
+                    border-right: 8px solid $primer-color;
+                }
                 .videos {
                     width: 420px;
                     height: 260px;
@@ -250,6 +261,9 @@
                     margin-right: 0.5%;
                     margin-top: 1%;
                     margin-bottom: 1%;
+                    &:hover {
+                        box-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color;
+                    }
                 }
             }
         }
@@ -268,14 +282,26 @@
                 }
             }
             .divTotalImagenes {
+                @media screen and (max-width: 768px) {
+                    display: flex;
+                    flex-direction: column;
+                }
                 .divImagenes {
                     background-color: $segundo-color;
                     border: 1.5px solid $cuarto-color;
                     width: 24%;
                     margin-left: 0.5%;
                     margin-right: 0.5%;
+                    @media screen and (max-width: 768px ) {
+                        width: 80%;
+                        margin-top: 1%;
+                        margin-bottom: 1%;
+                    }
                     .fotoGaleria {
                         width: 300px;
+                        &:hover {
+                            box-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color;
+                        }
                     }
                 }
             } 
@@ -309,7 +335,7 @@
                 font-size: 200%;
                 font-weight: 900;
                 color: $cuarto-color;
-                -webkit-text-stroke: 1.3px $segundo-color;
+                -webkit-text-stroke: 1.2px $segundo-color;
                 text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
             }
             .respuesta {

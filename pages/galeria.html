@@ -4,13 +4,16 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Galeria</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../sass/estilos.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">   
+        <title>Custom Wheels - Galeria</title>
+        <meta name="description" content="Demostraciones de nuestros trabajos y la razón de que nuestros clientes se vayan felices.">
+        <meta name="keywords" content="custom, imágenes, fotos, autos de metal, autos personalizados.">
+        <link rel="icon" href="../assets/imagenes/favicon.ico">
     </head>
     </head>
     <body>
@@ -18,7 +21,7 @@
             <nav class="contNav col-12 navbar navbar-expand-lg navbar-light">
                 <div class="divNav container-fluid">
                     <a class="anclaLogo navbar-brand" href="../index.html">
-                        <img src="../assets/imagenes/LOGO.jpg" class="logoHeader rounded">
+                        <img src="../assets/imagenes/LOGO.jpg" class="logoHeader rounded" alt="Custom Wheels logo">
                     </a>
                     <button class="navbar-toggler" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -41,7 +44,7 @@
                     </div>
                     <div class="divcontacto">
                         <a href="./encargos.html" class="anclaImgEncargos">
-                            <img class="imagenEncargos rounded" src="../assets/imagenes/Encargos.jpg" alt="">
+                            <img class="imagenEncargos rounded" src="../assets/imagenes/Encargos.jpg" alt="auto escarabajo ilustrativo para pagina encargos">
                         </a>
                     </div>
                 </div>
@@ -50,9 +53,10 @@
     <main class="contenedorMain mainGaleria d-flex justify-content-center align-items-end">
         <div class="divTotalGaleria container-fluid">
             <div class="divTituloGaleria col-12 text-center">
-                <h1 class="tituloGaleria">MIRA ALGUNO DE NUESTROS PROYECTOS</h1>
+                <h1 class="tituloGaleria">MIRA ALGUNOS DE NUESTROS PROYECTOS</h1>
             </div>
-            <div class="divGaleriaVideos rounded">
+            <!--seccion de videos-->
+            <section class="divGaleriaVideos rounded">
                 <div class="divTituloVideos d-flex justify-content-center text-center pt-4">
                     <h2 class="tituloVideo col-lg-6 col-md-12 rounded">VIDEOS</h2>
                 </div>
@@ -61,30 +65,31 @@
                     <iframe class="videos col-lg-4 col-md-12" width="560" height="315" src="https://www.youtube.com/embed/zPKTTfjr81c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <iframe class="videos col-lg-4 col-md-12" width="560" height="315" src="https://www.youtube.com/embed/P_w1HykeE3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-            </div>
-            <div class="divGaleriaImagenes rounded mt-4 my-4">
+            </section>
+            <!--seccion de videos-->
+            <section class="divGaleriaImagenes rounded mt-4 my-4">
                 <div class="divTituloImagenes d-flex justify-content-center text-center pt-4">
                     <h2 class="tituloImagenes col-lg-6 col-md-12 rounded">IMAGENES</h2>
                 </div>
                 <div class="divTotalImagenes  d-flex justify-content-center align-items-center px-5 my-3">
                     <div class="divImagenes row d-flex justify-content-center col-lg-3 col-sm-12">
-                        <img src="..//assets/imagenes/galeria1.jpg" class="fotoGaleria rounded col-sm-12">
-                        <img src="..//assets/imagenes/galeria2.jpg" class="fotoGaleria rounded col-sm-12">
+                        <img src="..//assets/imagenes/galeria1.jpg" class="fotoGaleria rounded col-sm-12" loading="lazy" alt="Dos autos clasicos de frente con custom rojo y naranja">
+                        <img src="..//assets/imagenes/galeria2.jpg" class="fotoGaleria rounded col-sm-12" loading="lazy" alt="porshe 911 custom color lila metalico y rines color dorado">
                     </div>
                     <div class="divImagenes row d-flex justify-content-center col-lg-3 col-sm-12">
-                        <img src="..//assets/imagenes/galeria3.jpg" class="fotoGaleria rounded col-sm-12">
-                        <img src="..//assets/imagenes/galeria4.jpg" class="fotoGaleria rounded col-sm-12">
+                        <img src="..//assets/imagenes/galeria3.jpg" class="fotoGaleria rounded col-sm-12" loading="lazy" alt="nissan gtr r34 gris estilo pixel">
+                        <img src="..//assets/imagenes/galeria4.jpg" class="fotoGaleria rounded col-sm-12" loading="lazy" alt="volkswagen escarabajo custom arrumbrado">
                     </div>
                     <div class="divImagenes row d-flex justify-content-center col-lg-3 col-sm-12">
-                        <img src="..//assets/imagenes/galeria5.jpg" class="fotoGaleria rounded col-sm-12">
-                        <img src="..//assets/imagenes/galeria6.jpg" class="fotoGaleria rounded col-sm-12">
+                        <img src="..//assets/imagenes/galeria5.jpg" class="fotoGaleria rounded col-sm-12" loading="lazy" alt="auto clasico con custom de fantasia con dientes al costado">
+                        <img src="..//assets/imagenes/galeria6.jpg" class="fotoGaleria rounded col-sm-12" loading="lazy" alt="mazda rx-7 custom drift azul con rines dorados">
                     </div>
                     <div class="divImagenes row d-flex justify-content-center col-lg-3 col-sm-12">
-                        <img src="..//assets/imagenes/galeria8.jpg" class="fotoGaleria rounded col-sm-12">
-                        <img src="..//assets/imagenes/galeria7.jpg" class="fotoGaleria rounded col-sm-12">
+                        <img src="..//assets/imagenes/galeria8.jpg" class="fotoGaleria rounded col-sm-12" loading="lazy" alt="nissan skyline custom drif rojo y rines negros">
+                        <img src="..//assets/imagenes/galeria7.jpg" class="fotoGaleria rounded col-sm-12" loading="lazy" alt="autos americanos custom amarillo con rayas y marron ensanchado">
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </main>
     <footer class="contenedorFooter d-flex justify-content-center ">
@@ -111,7 +116,7 @@
             </div>
             <div class="divDerechos d-flex justify-content-center align-items-center mt-3 col-md-12 col-lg-6">
                 <h5 class="derechos ms-0">TODOS LOS DERECHOS RESERVADOS</h5>
-                <img src="../assets/imagenes/LOGO.jpg" class="logoFooter ms-3">
+                <img src="../assets/imagenes/LOGO.jpg" class="logoFooter ms-3" loading="lazy" alt="Custom Wheels logo">
             </div>
         </div>
     </footer>
