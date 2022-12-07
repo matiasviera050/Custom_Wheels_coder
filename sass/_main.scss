@@ -39,6 +39,7 @@
                 .divImgProductos {
                     .ImgIndex {
                         width: 100%;
+                        box-shadow: 0 0 5px $cuarto-color;
                         &:hover {
                             box-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color;
                         }
@@ -148,34 +149,137 @@
         .divAutos {
             width: 80%;
             .divAutosTipoUno {
+                position: relative;
                 display: inline;
                 background-color: $primer-color;
                 width: 30rem;
+                box-shadow: 0 0 5px $cuarto-color, 0 0 15px $cuarto-color;
                 .jdm {
                     width: 300px;
                     transition: box-shadow 100ms;
                     transform: scale(1rem, 1rem);
+                    box-shadow: 0 0 5px $cuarto-color;
                     &:hover {
                         box-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color;
                     }
                 }
-                .europeos {
-                    text-decoration: none;
+                .americanos {
                     width: 300px;
+                    box-shadow: 0 0 5px $cuarto-color;
                     &:hover {
                         box-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color;
+                    }
+                }
+                .textoDentro {
+                    color: $segundo-color;
+                    background-color: $cuarto-color;
+                    width: 67.9%;
+                    position: absolute;
+                    left: 16%;
+                    top: 32.1%;
+                    box-shadow: 0 0 5px $cuarto-color;
+                    &:hover {
+                        color: fuchsia;
+                    }
+                    @media screen and (max-width: 768px) {
+                        width: 84.6%;
+                        left: 8%;
+                    }
+                }
+                .textoDentro2 {
+                    color: $segundo-color;
+                    background-color: $cuarto-color;
+                    width: 67.9%;
+                    position: absolute;
+                    left: 16%;
+                    top: 62.8%;
+                    box-shadow: 0 0 5px $cuarto-color;
+                    &:hover {
+                        color: fuchsia;
+                    }
+                    @media screen and (max-width: 768px) {
+                        width: 84.6%;
+                        left: 8%;
+                    }
+                }
+                .textoDentro3 {
+                    color: $segundo-color;
+                    background-color: $cuarto-color;
+                    width: 67.9%;
+                    position: absolute;
+                    left: 16%;
+                    top: 93.5%;
+                    box-shadow: 0 0 5px $cuarto-color;
+                    &:hover {
+                        color: fuchsia;
+                    }
+                    @media screen and (max-width: 768px) {
+                        width: 84.6%;
+                        left: 8%;
                     }
                 }
             }
-            .divAutosTipoDos {
-                display: inline;
-                width: 30rem;
-                background-color: $primer-color;
-                .americanos {
-                    width: 300px;
-                    &:hover {
-                        box-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color;
-                    }
+        }
+        .divAutosTipoDos {
+            position: relative;
+            display: inline;
+            width: 30rem;
+            background-color: $primer-color;
+            box-shadow: 0 0 5px $cuarto-color, 0 0 15px $cuarto-color;
+            .europeos {
+                text-decoration: none;
+                width: 300px;
+                box-shadow: 0 0 5px $cuarto-color;
+                &:hover {
+                    box-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color;
+                }
+            }
+            .textoDentro {
+                color: $segundo-color;
+                background-color: $cuarto-color;
+                width: 67.9%;
+                position: absolute;
+                left: 16%;
+                top: 31%;
+                box-shadow: 0 0 5px $cuarto-color;
+                &:hover {
+                    color: fuchsia;
+                }
+                @media screen and (max-width: 768px) {
+                    width: 84.6%;
+                    left: 8%;
+                }
+            }
+            .textoDentro2 {
+                color: $segundo-color;
+                background-color: $cuarto-color;
+                width: 67.9%;
+                position: absolute;
+                left: 16%;
+                top: 64.1%;
+                box-shadow: 0 0 5px $cuarto-color;
+                &:hover {
+                    color: fuchsia;
+                }
+                @media screen and (max-width: 768px) {
+                    width: 84.6%;
+                    left: 8%;
+                }
+            }
+            .textoDentro3 {
+                color: $segundo-color;
+                background-color: $cuarto-color;
+                width: 67.9%;
+                position: absolute;
+                left: 16%;
+                top: 93.8%;
+                box-shadow: 0 0 5px $cuarto-color;
+                &:hover {
+                    color: fuchsia;
+                }
+                @media screen and (max-width: 768px) {
+                    width: 84.6%;
+                    left: 8%;
                 }
             }
         }
@@ -261,6 +365,7 @@
                     margin-right: 0.5%;
                     margin-top: 1%;
                     margin-bottom: 1%;
+                    box-shadow: 0 0 5px $cuarto-color;
                     &:hover {
                         box-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color;
                     }
@@ -288,7 +393,6 @@
                 }
                 .divImagenes {
                     background-color: $segundo-color;
-                    border: 1.5px solid $cuarto-color;
                     width: 24%;
                     margin-left: 0.5%;
                     margin-right: 0.5%;
@@ -299,6 +403,7 @@
                     }
                     .fotoGaleria {
                         width: 300px;
+                        box-shadow: 0 0 5px $cuarto-color;
                         &:hover {
                             box-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color;
                         }

@@ -9,22 +9,29 @@
         .divNav {
             .anclaLogo {
                 .logoHeader {
-                    width: 260px;
-                    background-color: map-get($map: $otros-colores, $key: negro-trasnparente);
+                    width: 230px;
+                    background-color: $cuarto-color;
                 }
             }
             .navbar-toggler {
                 background-color: $segundo-color;
+                margin: 0 auto;
             }
             .divlis {
                 .lista {
                     .listas {
+                        display: flex;
+                        align-items: center;
                         .letraNav {
                             text-decoration: none;
                             background-color: $segundo-color;
                             font-size: 1.3rem;
                             font-weight: 1000;
                             color: black;
+                            @media screen and (max-width: 768px) {
+                                width: 100%;
+                                text-align: center;
+                            }
                             &:hover {
                                 text-shadow: 0 0 5px $primer-color, 0 0 25px $primer-color;
                             }
@@ -33,6 +40,9 @@
                 }
             }
             .divcontacto {
+                @media screen and (max-width: 768px) {
+                margin: 0 auto; 
+                }
                 .anclaImgEncargos {
                     .imagenEncargos {
                         width: 96px;
