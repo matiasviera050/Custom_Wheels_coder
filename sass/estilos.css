@@ -602,7 +602,7 @@
 }
 @media (max-width: 768px) {
   .mainContacto {
-    height: 150vh;
+    height: 100vh;
   }
 }
 .mainContacto .divisorTotalForm {
@@ -624,11 +624,6 @@
   background-color: rgba(126, 76, 165, 0.9058823529);
   height: 75vh;
   width: 100%;
-}
-@media screen and (max-width: 768px) {
-  .mainContacto .divisorTotalForm .formulario .divisorForm {
-    height: 82vh;
-  }
 }
 .mainContacto .divisorTotalForm .formulario .divisorForm .divUnoform .textFormulario {
   color: black;
