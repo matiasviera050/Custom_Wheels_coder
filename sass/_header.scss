@@ -3,9 +3,11 @@
 .contenedorArriba {
     .contNav {
         z-index: 1;
-        position: fixed;
+        background-color: black;
+        /*position: fixed;
         top: 0%;
         background-color: map-get($map: $otros-colores, $key: negro-trasnparente-ocuro);
+        */
         .divNav {
             .anclaLogo {
                 .logoHeader {

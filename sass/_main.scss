@@ -10,10 +10,10 @@
 
 /*MAIN INDEX*/
 .mainIndex {
-    height: 263.7vh;
-    @include aliniar (center, flex-end);
+    height: 239vh;
+    @include aliniar (center, center);
     @media screen and (max-width: 768px) {
-        height: 427vh;
+        height: 100%;
     }
     .divTotalIndex {
         .divProductos {
@@ -76,6 +76,9 @@
             }
         }
         .divUbicacion {
+            @media screen and (max-width: 768px) {
+                margin-bottom: 3%;
+            }
             .divUbicacionText {
                 background-color: map-get($map: $otros-colores, $key: negro-trasnparente);
                 border-radius: 1%;
