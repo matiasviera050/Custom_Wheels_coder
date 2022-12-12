@@ -86,11 +86,11 @@
   text-shadow: 0 0 5px rgba(126, 76, 165, 0.9058823529), 0 0 25px rgba(126, 76, 165, 0.9058823529);
 }
 @media screen and (max-width: 768px) {
-  .contenedorArriba .contNav .divNav .divcontacto {
+  .contenedorArriba .contNav .divNav .divlis .divcontacto {
     margin: 0 auto;
   }
 }
-.contenedorArriba .contNav .divNav .divcontacto .anclaImgEncargos .imagenEncargos {
+.contenedorArriba .contNav .divNav .divlis .divcontacto .anclaImgEncargos .imagenEncargos {
   width: 96px;
 }
 
@@ -602,20 +602,33 @@
 }
 @media (max-width: 768px) {
   .mainContacto {
-    height: 100%;
-    flex-direction: row-reverse;
+    height: 150vh;
   }
 }
 .mainContacto .divisorTotalForm {
   margin-top: 7.4rem;
 }
+@media screen and (max-width: 768px) {
+  .mainContacto .divisorTotalForm {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .mainContacto .divisorTotalForm .formulario {
-  width: 50%;
+  height: 75vh;
+  width: 100%;
 }
 .mainContacto .divisorTotalForm .formulario .divisorForm {
   background-color: rgba(126, 76, 165, 0.9058823529);
   height: 75vh;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .mainContacto .divisorTotalForm .formulario .divisorForm {
+    height: 82vh;
+  }
 }
 .mainContacto .divisorTotalForm .formulario .divisorForm .divUnoform .textFormulario {
   color: black;
@@ -681,6 +694,14 @@
 .mainContacto .divisorTotalForm .introduccion {
   background-color: rgba(0, 0, 0, 0.301);
   border-radius: 1%;
+}
+@media screen and (max-width: 768px) {
+  .mainContacto .divisorTotalForm .introduccion {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
 }
 .mainContacto .divisorTotalForm .introduccion .divTextContacto {
   height: 50%;
