@@ -139,7 +139,7 @@
                 color: map-get($map: $otros-colores, $key: blanco);
                 text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
                 @media screen and (max-width: 768px) {
-                    font-size: 85%;
+                    font-size: 75%;
                 }
                 .anclaEncargos {
                     text-decoration: none;
@@ -285,7 +285,7 @@
         }
         .divProximamente {
             background-color: map-get($map: $otros-colores, $key: negro-trasnparente);
-            width: 96%;
+            width: 95%;
             .proximamente {
                 margin-top: 1rem;
                 text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
@@ -501,42 +501,22 @@
     }
     .divisorTotalForm {
         margin-top: 7.4rem;
-        .divisorForm {
-            background-color: $primer-color;
-            height: 76%;
-            .divUnoform {
-                .textFormulario {
-                    color: $cuarto-color;
-                    font-size: 1.8rem;
-                    font-weight: 900;
-                    -webkit-text-stroke: 1px $segundo-color;
-                }
-            }
-            .divDosform {
-                .respuestaUno {
-                    transition: box-shadow 80ms;
-                    &:hover {
-                        box-shadow: 0 0 25px $cuarto-color;
-                        background-color: $segundo-color;
+        .formulario {
+            width: 50%;
+            .divisorForm {
+                background-color: $primer-color;
+                height: 75vh;
+                width: 100%;
+                .divUnoform {
+                    .textFormulario {
+                        color: $cuarto-color;
+                        font-size: 1.8rem;
+                        font-weight: 900;
+                        -webkit-text-stroke: 1px $segundo-color;
                     }
                 }
-            }
-            .divTresform {
-                .respuestaDos {
-                    transition: box-shadow 80ms;
-                    &:hover {
-                        box-shadow: 0 0 25px $cuarto-color;
-                        background-color: $segundo-color;
-                    
-                    }
-                }
-            }
-            .divCuatroform {
-                .divLabel {
-                    
-                }
-                .divBoton {
-                    .tener {
+                .divDosform {
+                    .respuestaUno {
                         transition: box-shadow 80ms;
                         &:hover {
                             box-shadow: 0 0 25px $cuarto-color;
@@ -544,47 +524,71 @@
                         }
                     }
                 }
-            }
-            .divCincoform {
-                .preguntaUno {
-                    transition: text-shadow 80ms;
-                    &:hover {
-                        text-shadow: 0 0 25px $cuarto-color;
+                .divTresform {
+                    .respuestaDos {
+                        transition: box-shadow 80ms;
+                        &:hover {
+                            box-shadow: 0 0 25px $cuarto-color;
+                            background-color: $segundo-color;
+                        
+                        }
                     }
                 }
-                .respuestaTres {
-                    transition: box-shadow 80ms;
-                    &:hover {
-                        box-shadow: 0 0 25px $cuarto-color;
-                        background-color: $segundo-color;
+                .divCuatroform {
+                    .divLabel {
+                        
+                    }
+                    .divBoton {
+                        .tener {
+                            transition: box-shadow 80ms;
+                            &:hover {
+                                box-shadow: 0 0 25px $cuarto-color;
+                                background-color: $segundo-color;
+                            }
+                        }
                     }
                 }
-            }
-            .divSeisform {
-                
-            }
-            .divSieteform {
-                .respuestaCuatro {
-                    transition: box-shadow 80ms, background-color 80ms;
-                    &:hover {
-                        box-shadow: 0 0 25px $cuarto-color;
-                        background-color: $segundo-color;
+                .divCincoform {
+                    .preguntaUno {
+                        transition: text-shadow 80ms;
+                        &:hover {
+                            text-shadow: 0 0 25px $cuarto-color;
+                        }
+                    }
+                    .respuestaTres {
+                        transition: box-shadow 80ms;
+                        &:hover {
+                            box-shadow: 0 0 25px $cuarto-color;
+                            background-color: $segundo-color;
+                        }
                     }
                 }
-            }
-            .divOchoform {
-                .botonUno {
-                    transition: background-color 300ms, box-shadow 500ms;
-                    &:hover {
-                        background-color: red;
-                        box-shadow: 0 0 5px red, 0 0 25px red, 0 0 50px red, 0 0 200px red;
+                .divSeisform {
+                    
+                }
+                .divSieteform {
+                    .respuestaCuatro {
+                        transition: box-shadow 80ms, background-color 80ms;
+                        &:hover {
+                            box-shadow: 0 0 25px $cuarto-color;
+                            background-color: $segundo-color;
+                        }
                     }
                 }
-                .botonDos {
-                    transition: background-color 300ms, box-shadow 500ms;
-                    &:hover {
-                        background-color: green;
-                        box-shadow: 0 0 5px green, 0 0 25px green, 0 0 50px green ,0 0 200px green;
+                .divOchoform {
+                    .botonUno {
+                        transition: background-color 300ms, box-shadow 500ms;
+                        &:hover {
+                            background-color: red;
+                            box-shadow: 0 0 5px red, 0 0 25px red, 0 0 50px red, 0 0 200px red;
+                        }
+                    }
+                    .botonDos {
+                        transition: background-color 300ms, box-shadow 500ms;
+                        &:hover {
+                            background-color: green;
+                            box-shadow: 0 0 5px green, 0 0 25px green, 0 0 50px green ,0 0 200px green;
+                        }
                     }
                 }
             }
