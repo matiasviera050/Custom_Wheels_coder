@@ -118,18 +118,23 @@
 
 /*MAIN PRODUCTOS*/
 .mainProductos {
-    height: 273vh;
+    height: 259vh;
     @include aliniar (center, flex-end);
     @media screen and (max-width: 768px) {
-        height: 382vh;
+        height: 100%;
     }
     .divTotalProductos {
+        width: 96.5vw;
+        @media screen and (max-width: 768px) {
+            width: 90vw;
+        }
         .divIntroduccion {
-            margin-top: 7rem;
             background-color: map-get($map: $otros-colores, $key: negro-trasnparente);
             height: 20vh;
-            width: 96%;
             border-radius: 1%;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
             .titulo {
                 color: $cuarto-color;
                 font-size: 2.5rem;
@@ -288,7 +293,7 @@
         }
         .divProximamente {
             background-color: map-get($map: $otros-colores, $key: negro-trasnparente);
-            width: 95%;
+            width: 100%;
             .proximamente {
                 margin-top: 1rem;
                 text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;

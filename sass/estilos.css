@@ -208,22 +208,33 @@
 
 /*MAIN PRODUCTOS*/
 .mainProductos {
-  height: 273vh;
+  height: 259vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 @media screen and (max-width: 768px) {
   .mainProductos {
-    height: 382vh;
+    height: 100%;
+  }
+}
+.mainProductos .divTotalProductos {
+  width: 96.5vw;
+}
+@media screen and (max-width: 768px) {
+  .mainProductos .divTotalProductos {
+    width: 90vw;
   }
 }
 .mainProductos .divTotalProductos .divIntroduccion {
-  margin-top: 7rem;
   background-color: rgba(0, 0, 0, 0.301);
   height: 20vh;
-  width: 96%;
   border-radius: 1%;
+}
+@media screen and (max-width: 768px) {
+  .mainProductos .divTotalProductos .divIntroduccion {
+    width: 100%;
+  }
 }
 .mainProductos .divTotalProductos .divIntroduccion .titulo {
   color: black;
@@ -396,7 +407,7 @@
 }
 .mainProductos .divTotalProductos .divProximamente {
   background-color: rgba(0, 0, 0, 0.301);
-  width: 95%;
+  width: 100%;
 }
 .mainProductos .divTotalProductos .divProximamente .proximamente {
   margin-top: 1rem;
