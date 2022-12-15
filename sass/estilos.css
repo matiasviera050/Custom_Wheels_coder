@@ -1,0 +1,880 @@
+/*mapas*/
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.text-d-none {
+  text-decoration: none;
+}
+
+.rounded {
+  border: 2px solid #dbb6ee;
+}
+
+.rounded {
+  color: black;
+}
+
+.colorSecundario {
+  color: #f0d6fc;
+}
+
+.borderBottom {
+  border-bottom: 2px solid #dbb6ee;
+}
+
+.textosSecundarios {
+  color: black;
+  -webkit-text-stroke: 1.5px #dbb6ee;
+  font-size: 2.4rem;
+  font-weight: 900;
+  text-shadow: 0 0 5px black, 0 0 25px black;
+}
+
+.titulosSecciones {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 900;
+  background-color: #dbb6ee;
+}
+
+.marginLeft {
+  margin-left: 17%;
+}
+
+.boxShadow {
+  box-shadow: 0 0 5px black, 0 0 10px black;
+}
+
+.contenedorArriba .contNav {
+  z-index: 1;
+  background-color: black;
+  /*position: fixed;
+  top: 0%;
+  background-color: map-get($map: $otros-colores, $key: negro-trasnparente-ocuro);
+  */
+}
+.contenedorArriba .contNav .divNav .anclaLogo .logoHeader {
+  width: 230px;
+  background-color: black;
+}
+.contenedorArriba .contNav .divNav .navbar-toggler {
+  background-color: #dbb6ee;
+  margin: 0 auto;
+}
+.contenedorArriba .contNav .divNav .divlis .lista .listas {
+  display: flex;
+  align-items: center;
+}
+.contenedorArriba .contNav .divNav .divlis .lista .listas .letraNav {
+  text-decoration: none;
+  background-color: #dbb6ee;
+  font-size: 1.3rem;
+  font-weight: 1000;
+  color: black;
+}
+@media screen and (max-width: 768px) {
+  .contenedorArriba .contNav .divNav .divlis .lista .listas .letraNav {
+    width: 100%;
+    text-align: center;
+  }
+}
+.contenedorArriba .contNav .divNav .divlis .lista .listas .letraNav:hover {
+  text-shadow: 0 0 5px rgba(126, 76, 165, 0.9058823529), 0 0 25px rgba(126, 76, 165, 0.9058823529);
+}
+@media screen and (max-width: 768px) {
+  .contenedorArriba .contNav .divNav .divlis .divcontacto {
+    margin: 0 auto;
+  }
+}
+.contenedorArriba .contNav .divNav .divlis .divcontacto .anclaImgEncargos .imagenEncargos {
+  width: 96px;
+}
+
+/* COMIENZO MAIN */
+.contenedorMain {
+  background-image: url(../assets/imagenes/BACKGROUND.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*MAIN INDEX*/
+.mainIndex {
+  height: 239vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .mainIndex {
+    height: 100%;
+  }
+}
+.mainIndex .divTotalIndex .divProductos .divUnoMain {
+  background-color: rgba(0, 0, 0, 0.301);
+  color: black;
+}
+.mainIndex .divTotalIndex .divProductos .divUnoMain .tituloPrincipal {
+  font-size: 2.7rem;
+  font-weight: 900;
+  -webkit-text-stroke: 2px #dbb6ee;
+  text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+}
+.mainIndex .divTotalIndex .divProductos .divTipoDos {
+  background-color: rgba(126, 76, 165, 0.9058823529);
+  border-top: 2px solid #dbb6ee;
+  border-left: 2px solid #dbb6ee;
+  border-right: 2px solid #dbb6ee;
+}
+@media screen and (max-width: 768px) {
+  .mainIndex .divTotalIndex .divProductos .divTipoDos {
+    margin-bottom: 4%;
+    border: 2px solid #dbb6ee;
+  }
+}
+.mainIndex .divTotalIndex .divProductos .divTipoDos .divImgProductos .ImgIndex {
+  width: 100%;
+  box-shadow: 0 0 5px black;
+}
+.mainIndex .divTotalIndex .divProductos .divTipoDos .divImgProductos .ImgIndex:hover {
+  box-shadow: 0 0 5px black, 0 0 25px black;
+}
+.mainIndex .divTotalIndex .divProductos .divTipoDos .divTextIndex .divTituloIndex {
+  height: 50%;
+}
+@media screen and (max-width: 768px) {
+  .mainIndex .divTotalIndex .divProductos .divTipoDos .divTextIndex .divTituloIndex {
+    margin-right: 16%;
+  }
+}
+.mainIndex .divTotalIndex .divProductos .divTipoDos .divTextIndex .divTituloIndex .titulosIndex {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #dbb6ee;
+  text-shadow: 0 0 5px black, 0 0 25px black;
+}
+.mainIndex .divTotalIndex .divProductos .divTipoDos .divTextIndex .divDescripcionIndex {
+  height: 50%;
+}
+@media screen and (max-width: 768px) {
+  .mainIndex .divTotalIndex .divProductos .divTipoDos .divTextIndex .divDescripcionIndex {
+    height: 40%;
+    margin-bottom: 3%;
+  }
+}
+.mainIndex .divTotalIndex .divProductos .divTipoDos .divTextIndex .divDescripcionIndex .descripcionIndex {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #dbb6ee;
+  text-shadow: 0 0 5px black;
+}
+@media screen and (max-width: 768px) {
+  .mainIndex .divTotalIndex .divUbicacion {
+    margin-bottom: 3%;
+  }
+}
+.mainIndex .divTotalIndex .divUbicacion .divUbicacionText {
+  background-color: rgba(0, 0, 0, 0.301);
+  border-radius: 1%;
+}
+.mainIndex .divTotalIndex .divUbicacion .divUbicacionText .divUbicacionTitulo {
+  height: 50%;
+}
+.mainIndex .divTotalIndex .divUbicacion .divUbicacionText .divUbicacionTitulo .divUbicacionTitulo .ubicacionTitulo {
+  color: black;
+  -webkit-text-stroke: 1.5px #dbb6ee;
+  font-size: 2rem;
+  font-weight: 900;
+  text-shadow: 0 0 5px black, 0 0 25px black;
+}
+.mainIndex .divTotalIndex .divUbicacion .divUbicacionDescripcion {
+  height: 50%;
+}
+.mainIndex .divTotalIndex .divUbicacion .divUbicacionDescripcion .ubicacionDescripcion {
+  color: #dbb6ee;
+  font-weight: 900;
+  text-shadow: 0 0 5px black;
+}
+/*TERMINA MAIN INDEX
+
+....................
+
+/*MAIN PRODUCTOS*/
+.mainProductos {
+  height: 259vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+@media screen and (max-width: 768px) {
+  .mainProductos {
+    height: 100%;
+  }
+}
+.mainProductos .divTotalProductos {
+  width: 96.5vw;
+}
+@media screen and (max-width: 768px) {
+  .mainProductos .divTotalProductos {
+    width: 90vw;
+  }
+}
+.mainProductos .divTotalProductos .divIntroduccion {
+  background-color: rgba(0, 0, 0, 0.301);
+  height: 20vh;
+  border-radius: 1%;
+}
+@media screen and (max-width: 768px) {
+  .mainProductos .divTotalProductos .divIntroduccion {
+    width: 100%;
+  }
+}
+.mainProductos .divTotalProductos .divIntroduccion .titulo {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #dbb6ee;
+  text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+}
+.mainProductos .divTotalProductos .divIntroduccion .aclaracion {
+  text-decoration: none;
+  color: #f0d6fc;
+  text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+}
+@media screen and (max-width: 768px) {
+  .mainProductos .divTotalProductos .divIntroduccion .aclaracion {
+    font-size: 75%;
+  }
+}
+.mainProductos .divTotalProductos .divIntroduccion .aclaracion .anclaEncargos {
+  text-decoration: none;
+}
+.mainProductos .divTotalProductos .divAutos {
+  width: 80%;
+}
+.mainProductos .divTotalProductos .divAutos .divAutosTipoUno {
+  position: relative;
+  display: inline;
+  background-color: rgba(126, 76, 165, 0.9058823529);
+  width: 30rem;
+  box-shadow: 0 0 5px black, 0 0 15px black;
+}
+.mainProductos .divTotalProductos .divAutos .divAutosTipoUno .jdm {
+  width: 300px;
+  transition: box-shadow 100ms;
+  transform: scale(1rem, 1rem);
+  box-shadow: 0 0 5px black;
+}
+.mainProductos .divTotalProductos .divAutos .divAutosTipoUno .jdm:hover {
+  box-shadow: 0 0 5px black, 0 0 25px black;
+}
+.mainProductos .divTotalProductos .divAutos .divAutosTipoUno .americanos {
+  width: 300px;
+  box-shadow: 0 0 5px black;
+}
+.mainProductos .divTotalProductos .divAutos .divAutosTipoUno .americanos:hover {
+  box-shadow: 0 0 5px black, 0 0 25px black;
+}
+.mainProductos .divTotalProductos .divAutos .divAutosTipoUno .textoDentro {
+  color: #dbb6ee;
+  background-color: black;
+  width: 67.9%;
+  position: absolute;
+  left: 16%;
+  top: 32.1%;
+  box-shadow: 0 0 5px black;
+}
+.mainProductos .divTotalProductos .divAutos .divAutosTipoUno .textoDentro:hover {
+  color: fuchsia;
+}
+@media screen and (max-width: 768px) {
+  .mainProductos .divTotalProductos .divAutos .divAutosTipoUno .textoDentro {
+    width: 84.6%;
+    left: 8%;
+  }
+}
+.mainProductos .divTotalProductos .divAutos .divAutosTipoUno .textoDentro2 {
+  color: #dbb6ee;
+  background-color: black;
+  width: 67.9%;
+  position: absolute;
+  left: 16%;
+  top: 62.8%;
+  box-shadow: 0 0 5px black;
+}
+.mainProductos .divTotalProductos .divAutos .divAutosTipoUno .textoDentro2:hover {
+  color: fuchsia;
+}
+@media screen and (max-width: 768px) {
+  .mainProductos .divTotalProductos .divAutos .divAutosTipoUno .textoDentro2 {
+    width: 84.6%;
+    left: 8%;
+  }
+}
+.mainProductos .divTotalProductos .divAutos .divAutosTipoUno .textoDentro3 {
+  color: #dbb6ee;
+  background-color: black;
+  width: 67.9%;
+  position: absolute;
+  left: 16%;
+  top: 93.5%;
+  box-shadow: 0 0 5px black;
+}
+.mainProductos .divTotalProductos .divAutos .divAutosTipoUno .textoDentro3:hover {
+  color: fuchsia;
+}
+@media screen and (max-width: 768px) {
+  .mainProductos .divTotalProductos .divAutos .divAutosTipoUno .textoDentro3 {
+    width: 84.6%;
+    left: 8%;
+  }
+}
+.mainProductos .divTotalProductos .divAutosTipoDos {
+  position: relative;
+  display: inline;
+  width: 30rem;
+  background-color: rgba(126, 76, 165, 0.9058823529);
+  box-shadow: 0 0 5px black, 0 0 15px black;
+}
+.mainProductos .divTotalProductos .divAutosTipoDos .europeos {
+  text-decoration: none;
+  width: 300px;
+  box-shadow: 0 0 5px black;
+}
+.mainProductos .divTotalProductos .divAutosTipoDos .europeos:hover {
+  box-shadow: 0 0 5px black, 0 0 25px black;
+}
+.mainProductos .divTotalProductos .divAutosTipoDos .textoDentro {
+  color: #dbb6ee;
+  background-color: black;
+  width: 67.9%;
+  position: absolute;
+  left: 16%;
+  top: 31%;
+  box-shadow: 0 0 5px black;
+}
+.mainProductos .divTotalProductos .divAutosTipoDos .textoDentro:hover {
+  color: fuchsia;
+}
+@media screen and (max-width: 768px) {
+  .mainProductos .divTotalProductos .divAutosTipoDos .textoDentro {
+    width: 84.6%;
+    left: 8%;
+  }
+}
+.mainProductos .divTotalProductos .divAutosTipoDos .textoDentro2 {
+  color: #dbb6ee;
+  background-color: black;
+  width: 67.9%;
+  position: absolute;
+  left: 16%;
+  top: 64.1%;
+  box-shadow: 0 0 5px black;
+}
+.mainProductos .divTotalProductos .divAutosTipoDos .textoDentro2:hover {
+  color: fuchsia;
+}
+@media screen and (max-width: 768px) {
+  .mainProductos .divTotalProductos .divAutosTipoDos .textoDentro2 {
+    width: 84.6%;
+    left: 8%;
+  }
+}
+.mainProductos .divTotalProductos .divAutosTipoDos .textoDentro3 {
+  color: #dbb6ee;
+  background-color: black;
+  width: 67.9%;
+  position: absolute;
+  left: 16%;
+  top: 93.8%;
+  box-shadow: 0 0 5px black;
+}
+.mainProductos .divTotalProductos .divAutosTipoDos .textoDentro3:hover {
+  color: fuchsia;
+}
+@media screen and (max-width: 768px) {
+  .mainProductos .divTotalProductos .divAutosTipoDos .textoDentro3 {
+    width: 84.6%;
+    left: 8%;
+  }
+}
+.mainProductos .divTotalProductos .divProximamente {
+  background-color: rgba(0, 0, 0, 0.301);
+  width: 100%;
+}
+.mainProductos .divTotalProductos .divProximamente .proximamente {
+  margin-top: 1rem;
+  text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+  font-size: 500%;
+  font-weight: 900;
+  color: black;
+  -webkit-text-stroke: 2px #dbb6ee;
+}
+@media screen and (max-width: 768px) {
+  .mainProductos .divTotalProductos .divProximamente .proximamente {
+    width: 60%;
+    font-size: 193%;
+    -webkit-text-stroke: 1px #dbb6ee;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainProductos .divTotalProductos .divIntroduccion {
+    width: 84%;
+  }
+}
+
+/*TERMINA MAIN PRODUCTOS
+
+.........................
+
+/*COMIENZA MAIN GALERIA*/
+.mainGaleria {
+  height: 192vh;
+}
+@media screen and (max-width: 768px) {
+  .mainGaleria {
+    height: 100%;
+  }
+}
+.mainGaleria .divTotalGaleria .divTituloGaleria {
+  color: black;
+  background-color: rgba(0, 0, 0, 0.301);
+}
+.mainGaleria .divTotalGaleria .divTituloGaleria .tituloGaleria {
+  font-size: 2.7rem;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #dbb6ee;
+}
+@media screen and (max-width: 768px) {
+  .mainGaleria .divTotalGaleria .divTituloGaleria .tituloGaleria {
+    font-size: 2.4rem;
+    font-weight: 900;
+    -webkit-text-stroke: 0.7px #dbb6ee;
+  }
+}
+.mainGaleria .divTotalGaleria .divGaleriaVideos {
+  background-color: rgba(126, 76, 165, 0.9058823529);
+}
+.mainGaleria .divTotalGaleria .divGaleriaVideos .divTituloVideos {
+  color: black;
+}
+.mainGaleria .divTotalGaleria .divGaleriaVideos .divTituloVideos .tituloVideo {
+  background-color: #dbb6ee;
+  font-size: 2.1rem;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #dbb6ee;
+  text-shadow: 0 0 5px black;
+}
+.mainGaleria .divTotalGaleria .divGaleriaVideos .divVideos {
+  background-color: #dbb6ee;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .mainGaleria .divTotalGaleria .divGaleriaVideos .divVideos {
+    border-left: 8px solid rgba(126, 76, 165, 0.9058823529);
+    border-right: 8px solid rgba(126, 76, 165, 0.9058823529);
+  }
+}
+.mainGaleria .divTotalGaleria .divGaleriaVideos .divVideos .videos {
+  width: 420px;
+  height: 260px;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  box-shadow: 0 0 5px black;
+}
+.mainGaleria .divTotalGaleria .divGaleriaVideos .divVideos .videos:hover {
+  box-shadow: 0 0 5px black, 0 0 25px black;
+}
+.mainGaleria .divTotalGaleria .divGaleriaImagenes {
+  background-color: rgba(126, 76, 165, 0.9058823529);
+  margin-left: 0.01%;
+  margin-right: 0.01%;
+}
+.mainGaleria .divTotalGaleria .divGaleriaImagenes .divTituloImagenes {
+  color: black;
+}
+.mainGaleria .divTotalGaleria .divGaleriaImagenes .divTituloImagenes .tituloImagenes {
+  background-color: #dbb6ee;
+  font-size: 2.1rem;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #dbb6ee;
+  text-shadow: 0 0 5px black;
+}
+@media screen and (max-width: 768px) {
+  .mainGaleria .divTotalGaleria .divGaleriaImagenes .divTotalImagenes {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.mainGaleria .divTotalGaleria .divGaleriaImagenes .divTotalImagenes .divImagenes {
+  background-color: #dbb6ee;
+  width: 24%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
+@media screen and (max-width: 768px) {
+  .mainGaleria .divTotalGaleria .divGaleriaImagenes .divTotalImagenes .divImagenes {
+    width: 80%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+}
+.mainGaleria .divTotalGaleria .divGaleriaImagenes .divTotalImagenes .divImagenes .fotoGaleria {
+  width: 300px;
+  box-shadow: 0 0 5px black;
+}
+.mainGaleria .divTotalGaleria .divGaleriaImagenes .divTotalImagenes .divImagenes .fotoGaleria:hover {
+  box-shadow: 0 0 5px black, 0 0 25px black;
+}
+
+/*TERMINA MAIN GALERIA
+
+...........................
+
+/*COMIENZA MAIN ACERCA DE*/
+.mainAcerca {
+  display: flex;
+  flex-wrap: wrap;
+  height: 152vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .mainAcerca {
+    height: 100%;
+  }
+}
+.mainAcerca .divTotalAcerca .divUnoAcerca {
+  background-color: rgba(126, 76, 165, 0.9058823529);
+  margin-top: 10.5rem;
+}
+.mainAcerca .divTotalAcerca .divUnoAcerca .preguntas {
+  width: 80%;
+  font-size: 200%;
+  font-weight: 900;
+  color: black;
+  -webkit-text-stroke: 1.2px #dbb6ee;
+  text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+}
+.mainAcerca .divTotalAcerca .divUnoAcerca .respuesta {
+  font-weight: 700;
+  color: #f0d6fc;
+  width: 95%;
+  text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+}
+.mainAcerca .divTotalAcerca .divDosAcerca {
+  margin-top: 0%;
+  background-color: rgba(126, 76, 165, 0.9058823529);
+}
+.mainAcerca .divTotalAcerca .divDosAcerca .lugarEscrito .estamos {
+  font-size: 1.8rem;
+  font-weight: 900;
+  -webkit-text-stroke: 1.3px #dbb6ee;
+  text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+}
+.mainAcerca .divTotalAcerca .divDosAcerca .lugarEscrito .direccion {
+  font-size: 1.1rem;
+  color: #f0d6fc;
+  text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+}
+.mainAcerca .divTotalAcerca .divDosAcerca .lugarVisual {
+  background-color: #dbb6ee;
+}
+.mainAcerca .divTotalAcerca .divDosAcerca .lugarVisual .estudio {
+  background-color: black;
+  transition: 100ms;
+}
+.mainAcerca .divTotalAcerca .divDosAcerca .lugarVisual .estudio:hover {
+  box-shadow: 0 0 5px black, 0 0 25px black;
+}
+.mainAcerca .divTotalAcerca .divDosAcerca .lugarVisual .mapa {
+  border: 2px solid #f0d6fc;
+  height: 5rem;
+  background-color: #eeebee;
+}
+
+/*TERMINA MAIN ACERCA DE
+
+...........................
+
+/*COMIENZA MAIN ENCARGOS*/
+.mainContacto {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .mainContacto {
+    height: 100vh;
+  }
+}
+.mainContacto .divisorTotalForm {
+  margin-top: 7.4rem;
+}
+@media screen and (max-width: 768px) {
+  .mainContacto .divisorTotalForm {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.mainContacto .divisorTotalForm .formulario {
+  height: 75vh;
+  width: 100%;
+}
+.mainContacto .divisorTotalForm .formulario .divisorForm {
+  background-color: rgba(126, 76, 165, 0.9058823529);
+  height: 75vh;
+  width: 100%;
+}
+.mainContacto .divisorTotalForm .formulario .divisorForm .divUnoform .textFormulario {
+  color: black;
+  font-size: 1.8rem;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #dbb6ee;
+}
+.mainContacto .divisorTotalForm .formulario .divisorForm .divDosform .respuestaUno {
+  transition: box-shadow 80ms;
+}
+.mainContacto .divisorTotalForm .formulario .divisorForm .divDosform .respuestaUno:hover {
+  box-shadow: 0 0 25px black;
+  background-color: #dbb6ee;
+}
+.mainContacto .divisorTotalForm .formulario .divisorForm .divTresform .respuestaDos {
+  transition: box-shadow 80ms;
+}
+.mainContacto .divisorTotalForm .formulario .divisorForm .divTresform .respuestaDos:hover {
+  box-shadow: 0 0 25px black;
+  background-color: #dbb6ee;
+}
+.mainContacto .divisorTotalForm .formulario .divisorForm .divCuatroform .divBoton .tener {
+  transition: box-shadow 80ms;
+}
+.mainContacto .divisorTotalForm .formulario .divisorForm .divCuatroform .divBoton .tener:hover {
+  box-shadow: 0 0 25px black;
+  background-color: #dbb6ee;
+}
+.mainContacto .divisorTotalForm .formulario .divisorForm .divCincoform .preguntaUno {
+  transition: text-shadow 80ms;
+}
+.mainContacto .divisorTotalForm .formulario .divisorForm .divCincoform .preguntaUno:hover {
+  text-shadow: 0 0 25px black;
+}
+.mainContacto .divisorTotalForm .formulario .divisorForm .divCincoform .respuestaTres {
+  transition: box-shadow 80ms;
+}
+.mainContacto .divisorTotalForm .formulario .divisorForm .divCincoform .respuestaTres:hover {
+  box-shadow: 0 0 25px black;
+  background-color: #dbb6ee;
+}
+.mainContacto .divisorTotalForm .formulario .divisorForm .divSieteform .respuestaCuatro {
+  transition: box-shadow 80ms, background-color 80ms;
+}
+.mainContacto .divisorTotalForm .formulario .divisorForm .divSieteform .respuestaCuatro:hover {
+  box-shadow: 0 0 25px black;
+  background-color: #dbb6ee;
+}
+.mainContacto .divisorTotalForm .formulario .divisorForm .divOchoform .botonUno {
+  transition: background-color 300ms, box-shadow 500ms;
+}
+.mainContacto .divisorTotalForm .formulario .divisorForm .divOchoform .botonUno:hover {
+  background-color: red;
+  box-shadow: 0 0 5px red, 0 0 25px red, 0 0 50px red, 0 0 200px red;
+}
+.mainContacto .divisorTotalForm .formulario .divisorForm .divOchoform .botonDos {
+  transition: background-color 300ms, box-shadow 500ms;
+}
+.mainContacto .divisorTotalForm .formulario .divisorForm .divOchoform .botonDos:hover {
+  background-color: green;
+  box-shadow: 0 0 5px green, 0 0 25px green, 0 0 50px green, 0 0 200px green;
+}
+.mainContacto .divisorTotalForm .introduccion {
+  background-color: rgba(0, 0, 0, 0.301);
+  border-radius: 1%;
+}
+@media screen and (max-width: 768px) {
+  .mainContacto .divisorTotalForm .introduccion {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+}
+.mainContacto .divisorTotalForm .introduccion .divTextContacto {
+  height: 50%;
+}
+.mainContacto .divisorTotalForm .introduccion .divTextContacto .textContacto {
+  color: black;
+  font-size: 2.7rem;
+  font-weight: 800;
+  -webkit-text-stroke: 2px #dbb6ee;
+  transition: text-shadow 50ms;
+}
+.mainContacto .divisorTotalForm .introduccion .divTextContacto .textContacto:hover {
+  text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+}
+.mainContacto .divisorTotalForm .introduccion .divDescripcion {
+  height: 50%;
+}
+.mainContacto .divisorTotalForm .introduccion .divDescripcion .textDescripcion {
+  color: #f0d6fc;
+  font-weight: 900;
+  transition: text-shadow 50ms;
+}
+.mainContacto .divisorTotalForm .introduccion .divDescripcion .textDescripcion:hover {
+  text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+}
+
+.contenedorFooter {
+  background-color: rgb(165, 165, 165);
+  -webkit-text-decoration: black;
+          text-decoration: black;
+  box-shadow: inset 0 0 5px black;
+}
+.contenedorFooter .divContFooter {
+  display: flex;
+  align-items: center;
+}
+.contenedorFooter .divContFooter .divRedes {
+  color: black;
+}
+.contenedorFooter .divContFooter .divRedes .redes {
+  font-size: 1.1rem;
+}
+.contenedorFooter .divContFooter .divRedes .redes:hover {
+  text-shadow: 0 0 5px rgba(126, 76, 165, 0.9058823529), 0 0 25px rgba(126, 76, 165, 0.9058823529);
+}
+.contenedorFooter .divContFooter .divRedes .divIconos .whatsapp {
+  color: black;
+}
+.contenedorFooter .divContFooter .divRedes .divIconos .instagram {
+  color: black;
+}
+.contenedorFooter .divContFooter .divRedes .divIconos .email {
+  color: black;
+}
+.contenedorFooter .divContFooter .divDerechos {
+  justify-content: center;
+  -webkit-text-decoration: black;
+          text-decoration: black;
+}
+.contenedorFooter .divContFooter .divDerechos:hover {
+  text-shadow: 0 0 5px rgba(126, 76, 165, 0.9058823529), 0 0 25px rgba(126, 76, 165, 0.9058823529);
+}
+.contenedorFooter .divContFooter .divDerechos .derechos {
+  color: black;
+  margin-top: 2%;
+  font-size: 0.7rem;
+}
+.contenedorFooter .divContFooter .divDerechos .logoFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  margin-bottom: 2%;
+  background-color: black;
+}
+
+.mainError {
+  height: 100vh;
+  background-color: #dbb6ee;
+}
+.mainError .divTotalError .divIlustracion {
+  width: 49%;
+  height: 75vh;
+  background-color: rgba(126, 76, 165, 0.9058823529);
+  box-shadow: 0 0 5px black;
+}
+@media screen and (max-width: 768px) {
+  .mainError .divTotalError .divIlustracion {
+    width: 100%;
+    height: 50%;
+    margin-top: 4%;
+  }
+}
+.mainError .divTotalError .divIlustracion .ilustracion {
+  width: 100%;
+}
+.mainError .divTotalError .divDescripcion {
+  width: 49%;
+  height: 75vh;
+  border-radius: 1%;
+}
+@media screen and (max-width: 768px) {
+  .mainError .divTotalError .divDescripcion {
+    width: 100%;
+    height: 25%;
+  }
+}
+.mainError .divTotalError .divDescripcion .divTituloError {
+  height: 50%;
+}
+.mainError .divTotalError .divDescripcion .divTituloError .tituloError {
+  color: black;
+  font-size: 3rem;
+  font-weight: 900;
+  -webkit-text-stroke: 1px #dbb6ee;
+  text-shadow: 0 0 5px black;
+}
+.mainError .divTotalError .divDescripcion .divDescripcionError {
+  height: 50%;
+}
+.mainError .divTotalError .divDescripcion .divDescripcionError .descripcionError {
+  color: #dbb6ee;
+  font-size: 1.5rem;
+  font-weight: 900;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 0 0 5px black;
+}
+.mainError .divTotalError .divVolver {
+  width: 100%;
+  height: 15vh;
+}
+@media screen and (max-width: 768px) {
+  .mainError .divTotalError .divVolver {
+    width: 100%;
+    height: 20%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainError .divTotalError .divVolver .formVolver {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 1%;
+  }
+}
+.mainError .divTotalError .divVolver .formVolver .volver {
+  width: 30vw;
+  height: 10vh;
+  color: #dbb6ee;
+  -webkit-text-stroke: 0.5px black;
+  background-color: rgba(126, 76, 165, 0.9058823529);
+  box-shadow: 0 0 5px black;
+  text-shadow: 0 0 10px black;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+@media screen and (max-width: 768px) {
+  .mainError .divTotalError .divVolver .formVolver .volver {
+    width: 45vh;
+  }
+}/*# sourceMappingURL=estilos.css.map */

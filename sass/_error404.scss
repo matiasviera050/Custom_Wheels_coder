@@ -1,0 +1,82 @@
+.mainError {
+    height: 100vh;
+    background-color: $segundo-color;
+    .divTotalError {
+        .divIlustracion {
+            width: 49%;
+            height: 75vh;
+            background-color: $primer-color;
+            box-shadow: 0 0 5px $cuarto-color;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                height: 50%;
+                margin-top: 4%;
+            }
+            .ilustracion {
+                width: 100%;
+                
+            }
+        }
+        .divDescripcion {
+            width: 49%;
+            height: 75vh;
+            border-radius: 1%;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                height: 25%;
+            }
+            .divTituloError {
+                height: 50%;
+                .tituloError {
+                    color: $cuarto-color;
+                    font-size: 3rem;
+                    font-weight: 900;
+                    -webkit-text-stroke: 1px $segundo-color;
+                    text-shadow: 0 0 5px $cuarto-color;
+                }
+            }
+            .divDescripcionError {
+                height: 50%;
+                .descripcionError {
+                    color: $segundo-color;
+                    font-size: 1.5rem;
+                    font-weight: 900;
+                    -webkit-text-stroke: 1px $cuarto-color;
+                    text-shadow: 0 0 5px $cuarto-color;
+                }
+            }
+        }
+        .divVolver {
+            width: 100%;
+            height: 15vh;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                height: 20%;
+            }
+            .formVolver {
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    padding-top: 1%;
+                }
+                .volver {
+                    width: 30vw;
+                    height: 10vh;
+                    color: $segundo-color;
+                    -webkit-text-stroke: 0.5px $cuarto-color;
+                    background-color: $primer-color;
+                    box-shadow: 0 0 5px $cuarto-color;
+                    text-shadow: 0 0 10px $cuarto-color;
+                    font-size: 2.5rem;
+                    font-weight: 900;
+                    @media screen and (max-width: 768px) {
+                        width: 45vh; 
+                    }
+                }
+            }
+        }
+    }
+}
