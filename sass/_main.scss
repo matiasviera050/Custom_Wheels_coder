@@ -10,13 +10,17 @@
 
 /*MAIN INDEX*/
 .mainIndex {
-    height: 239vh;
+    height: 234.5vh;
     @include aliniar (center, center);
     @media screen and (max-width: 768px) {
         height: 100%;
     }
     .divTotalIndex {
         .divProductos {
+            @media screen and (max-width: 768px) {
+                margin-left: 2%;
+                margin-right: 2%;
+            }
             .divUnoMain {
                 background-color: map-get($map: $otros-colores, $key: negro-trasnparente);
                 color: $cuarto-color;
@@ -25,6 +29,15 @@
                     font-weight: 900;
                     -webkit-text-stroke: 2px $segundo-color;
                     text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
+                }
+                .descripcionPrincipal {
+                    font-size: 1.3rem;
+                    font-weight: 900;
+                    color: map-get($map: $otros-colores, $key: blanco);
+                    text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
+                    @media screen and (max-width: 768px) {
+                        font-size: 1.1rem;
+                    }
                 }
             }
             .divTipoDos {
@@ -57,6 +70,10 @@
                             font-weight: 900;
                             -webkit-text-stroke: 1px $segundo-color;
                             text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color;      
+                            @media screen and (max-width: 768px) {
+                                font-size: 1.5rem;
+                                -webkit-text-stroke: 0.6px $segundo-color;
+                            }
                         }
                     }
                     .divDescripcionIndex {
@@ -76,12 +93,21 @@
             }
         }
         .divUbicacion {
+            width: 90vw;
             @media screen and (max-width: 768px) {
                 margin-bottom: 3%;
+                background-color: $segundo-color;
             }
             .divUbicacionText {
                 background-color: map-get($map: $otros-colores, $key: negro-trasnparente);
                 border-radius: 1%;
+                width: 428px;
+                margin: auto;
+                @media screen and (min-width: 768px) {
+                    margin-left: 14% ;
+                    margin-bottom: 1%;
+                    height: 370px;
+                }
                 .divUbicacionTitulo {
                     height: 50%;
                     .divUbicacionTitulo {
@@ -95,15 +121,28 @@
                     }
                 }
             }
+            .divUbicacionTitulo {
+                .ubicacionTitulo {
+                    @media screen and (max-width: 768px) {
+                        font-size: 2rem;
+                        -webkit-text-stroke: 1px $segundo-color;
+                    }
+                }
+            }
             .divUbicacionDescripcion {
                 height: 50%;
                 .ubicacionDescripcion {
                     color: $segundo-color;
                     font-weight: 900;
+                    font-size: 1.1rem;
                     text-shadow: 0 0 5px $cuarto-color;
+                    @media screen and (max-width: 768px) {
+                        font-size: 0.9rem;
+                    }
                 }
             }
             .divUbicacionGoogle {
+                background-color: aqua;
                 .mapa {
                 }
             }
@@ -132,9 +171,11 @@
             background-color: map-get($map: $otros-colores, $key: negro-trasnparente);
             height: 20vh;
             border-radius: 1%;
+            width: 100%;
             @media screen and (max-width: 768px) {
-                width: 100%;
+                width: 120vw;
             }
+
             .titulo {
                 color: $cuarto-color;
                 font-size: 2.5rem;
@@ -144,6 +185,8 @@
             }
             .aclaracion {
                 text-decoration: none;
+                font-size: 1.3rem;
+                font-weight: 900;
                 color: map-get($map: $otros-colores, $key: blanco);
                 text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
                 @media screen and (max-width: 768px) {
@@ -159,16 +202,15 @@
             .divAutosTipoUno {
                 position: relative;
                 display: inline;
-                background-color: $primer-color;
                 width: 30rem;
+                background-color: $primer-color;
                 box-shadow: 0 0 5px $cuarto-color, 0 0 15px $cuarto-color;
                 .jdm {
+                    text-decoration: none;
                     width: 300px;
-                    transition: box-shadow 100ms;
-                    transform: scale(1rem, 1rem);
                     box-shadow: 0 0 5px $cuarto-color;
                     &:hover {
-                        box-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color;
+                    box-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color;
                     }
                 }
                 .americanos {
@@ -303,7 +345,7 @@
                 -webkit-text-stroke: 2px $segundo-color;
                 @media screen and (max-width: 768px) {
                     width: 60%;
-                    font-size: 193%;
+                    font-size: 1.7rem;
                     -webkit-text-stroke: 1px $segundo-color;
                 }
             }
@@ -327,9 +369,9 @@
 
 /*COMIENZA MAIN GALERIA*/
 .mainGaleria {
-    height: 192vh;
+    height: 172.5vh;
     @media screen and (max-width: 768px) {
-        height: 100%;
+        height: 542.4vh;
     }
     .divTotalGaleria {
         .divTituloGaleria {
@@ -384,6 +426,9 @@
             background-color: $primer-color;
             margin-left: 0.01%;
             margin-right: 0.01%;
+            @media screen and (max-width: 768px) {
+                margin-bottom: 3%;
+            }
             .divTituloImagenes {
                 color: $cuarto-color;
                 .tituloImagenes {
@@ -434,15 +479,14 @@
 .mainAcerca {
     display: flex;
     flex-wrap: wrap;
-    height: 152vh;
+    height: 118vh;
     @include aliniar (center, center);
     @media (max-width: 768px) {
-        height: 100%;
+        height: 142vh;
     }
     .divTotalAcerca {
         .divUnoAcerca {
             background-color: $primer-color;   
-            margin-top: 10.5rem;
             .preguntas {
                 width: 80%;
                 font-size: 200%;
@@ -456,6 +500,9 @@
                 color: map-get($map: $otros-colores, $key: blanco);
                 width: 95%;
                 text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
+                @media screen and (min-width: 768px) {
+                    font-size: 1.1rem;
+                }
             }
         }
         .divDosAcerca { 
@@ -463,12 +510,13 @@
             background-color: $primer-color;
             .lugarEscrito {
                 .estamos {
-                    font-size: 1.8rem;
+                    font-size: 2rem;
                     font-weight: 900;
                     -webkit-text-stroke: 1.3px $segundo-color;
                     text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
                 }
                 .direccion {
+                    font-weight: 900;
                     font-size: 1.1rem;
                     color: map-get($map: $otros-colores, $key: blanco);
                     text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;
@@ -501,13 +549,14 @@
 .mainContacto {
     display: flex;
     flex-wrap: wrap;
-    height:100vh;
+    height:80vh;
     @include aliniar (center, center);
     @media (max-width: 768px) {
-        height: 100vh;
+        height: 170vh;
+        display: flex;
+        align-items: flex-start;
     }
     .divisorTotalForm {
-        margin-top: 7.4rem;
         @media screen and (max-width: 768px) {
             height: 75vh;
             width: 100%;
@@ -522,7 +571,8 @@
                 height: 75vh;
                 width: 100%;
                 @media screen and (max-width: 768px) {
-                    
+                    margin-top: 2vh;
+                    height: 87vh;
                 }
                 .divUnoform {
                     .textFormulario {
@@ -613,11 +663,11 @@
         .introduccion {
             background-color: map-get($map: $otros-colores, $key: negro-trasnparente);
             border-radius: 1%;
+            height: 74.5vh;
             @media screen and (max-width: 768px) {
                 display: flex;
                 flex-wrap: wrap;
-                margin-top: 10%;
-                margin-bottom: 10%;
+                margin-top: 17vh;
             }
             .divTextContacto {
                 height: 50%;
@@ -637,6 +687,7 @@
                 .textDescripcion {
                     color: map-get($map: $otros-colores, $key: blanco);
                     font-weight: 900;
+                    font-size: 1.2rem;
                     transition: text-shadow 50ms;
                     &:hover {
                         text-shadow: 0 0 5px $cuarto-color, 0 0 25px $cuarto-color, 0 0 50px $cuarto-color;

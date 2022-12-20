@@ -39,13 +39,15 @@
                 margin-top: 2%;
                 font-size: 0.7rem;
             }
-            .logoFooter {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 180px;
-                margin-bottom: 2%;
-                background-color: $cuarto-color;
+            .anclaLogoFooter {
+                .logoFooter {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 180px;
+                    margin-bottom: 2%;
+                    background-color: black;
+                }
             }
         }
     }

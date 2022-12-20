@@ -106,7 +106,7 @@
 
 /*MAIN INDEX*/
 .mainIndex {
-  height: 239vh;
+  height: 234.5vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,6 +114,12 @@
 @media screen and (max-width: 768px) {
   .mainIndex {
     height: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainIndex .divTotalIndex .divProductos {
+    margin-left: 2%;
+    margin-right: 2%;
   }
 }
 .mainIndex .divTotalIndex .divProductos .divUnoMain {
@@ -125,6 +131,17 @@
   font-weight: 900;
   -webkit-text-stroke: 2px #dbb6ee;
   text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+}
+.mainIndex .divTotalIndex .divProductos .divUnoMain .descripcionPrincipal {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #f0d6fc;
+  text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
+}
+@media screen and (max-width: 768px) {
+  .mainIndex .divTotalIndex .divProductos .divUnoMain .descripcionPrincipal {
+    font-size: 1.1rem;
+  }
 }
 .mainIndex .divTotalIndex .divProductos .divTipoDos {
   background-color: rgba(126, 76, 165, 0.9058823529);
@@ -160,6 +177,12 @@
   -webkit-text-stroke: 1px #dbb6ee;
   text-shadow: 0 0 5px black, 0 0 25px black;
 }
+@media screen and (max-width: 768px) {
+  .mainIndex .divTotalIndex .divProductos .divTipoDos .divTextIndex .divTituloIndex .titulosIndex {
+    font-size: 1.5rem;
+    -webkit-text-stroke: 0.6px #dbb6ee;
+  }
+}
 .mainIndex .divTotalIndex .divProductos .divTipoDos .divTextIndex .divDescripcionIndex {
   height: 50%;
 }
@@ -175,14 +198,27 @@
   color: #dbb6ee;
   text-shadow: 0 0 5px black;
 }
+.mainIndex .divTotalIndex .divUbicacion {
+  width: 90vw;
+}
 @media screen and (max-width: 768px) {
   .mainIndex .divTotalIndex .divUbicacion {
     margin-bottom: 3%;
+    background-color: #dbb6ee;
   }
 }
 .mainIndex .divTotalIndex .divUbicacion .divUbicacionText {
   background-color: rgba(0, 0, 0, 0.301);
   border-radius: 1%;
+  width: 428px;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .mainIndex .divTotalIndex .divUbicacion .divUbicacionText {
+    margin-left: 14%;
+    margin-bottom: 1%;
+    height: 370px;
+  }
 }
 .mainIndex .divTotalIndex .divUbicacion .divUbicacionText .divUbicacionTitulo {
   height: 50%;
@@ -194,13 +230,28 @@
   font-weight: 900;
   text-shadow: 0 0 5px black, 0 0 25px black;
 }
+@media screen and (max-width: 768px) {
+  .mainIndex .divTotalIndex .divUbicacion .divUbicacionTitulo .ubicacionTitulo {
+    font-size: 2rem;
+    -webkit-text-stroke: 1px #dbb6ee;
+  }
+}
 .mainIndex .divTotalIndex .divUbicacion .divUbicacionDescripcion {
   height: 50%;
 }
 .mainIndex .divTotalIndex .divUbicacion .divUbicacionDescripcion .ubicacionDescripcion {
   color: #dbb6ee;
   font-weight: 900;
+  font-size: 1.1rem;
   text-shadow: 0 0 5px black;
+}
+@media screen and (max-width: 768px) {
+  .mainIndex .divTotalIndex .divUbicacion .divUbicacionDescripcion .ubicacionDescripcion {
+    font-size: 0.9rem;
+  }
+}
+.mainIndex .divTotalIndex .divUbicacion .divUbicacionGoogle {
+  background-color: aqua;
 }
 /*TERMINA MAIN INDEX
 
@@ -230,10 +281,11 @@
   background-color: rgba(0, 0, 0, 0.301);
   height: 20vh;
   border-radius: 1%;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .mainProductos .divTotalProductos .divIntroduccion {
-    width: 100%;
+    width: 120vw;
   }
 }
 .mainProductos .divTotalProductos .divIntroduccion .titulo {
@@ -245,6 +297,8 @@
 }
 .mainProductos .divTotalProductos .divIntroduccion .aclaracion {
   text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 900;
   color: #f0d6fc;
   text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
 }
@@ -262,14 +316,13 @@
 .mainProductos .divTotalProductos .divAutos .divAutosTipoUno {
   position: relative;
   display: inline;
-  background-color: rgba(126, 76, 165, 0.9058823529);
   width: 30rem;
+  background-color: rgba(126, 76, 165, 0.9058823529);
   box-shadow: 0 0 5px black, 0 0 15px black;
 }
 .mainProductos .divTotalProductos .divAutos .divAutosTipoUno .jdm {
+  text-decoration: none;
   width: 300px;
-  transition: box-shadow 100ms;
-  transform: scale(1rem, 1rem);
   box-shadow: 0 0 5px black;
 }
 .mainProductos .divTotalProductos .divAutos .divAutosTipoUno .jdm:hover {
@@ -420,7 +473,7 @@
 @media screen and (max-width: 768px) {
   .mainProductos .divTotalProductos .divProximamente .proximamente {
     width: 60%;
-    font-size: 193%;
+    font-size: 1.7rem;
     -webkit-text-stroke: 1px #dbb6ee;
   }
 }
@@ -437,11 +490,11 @@
 
 /*COMIENZA MAIN GALERIA*/
 .mainGaleria {
-  height: 192vh;
+  height: 172.5vh;
 }
 @media screen and (max-width: 768px) {
   .mainGaleria {
-    height: 100%;
+    height: 542.4vh;
   }
 }
 .mainGaleria .divTotalGaleria .divTituloGaleria {
@@ -501,6 +554,11 @@
   margin-left: 0.01%;
   margin-right: 0.01%;
 }
+@media screen and (max-width: 768px) {
+  .mainGaleria .divTotalGaleria .divGaleriaImagenes {
+    margin-bottom: 3%;
+  }
+}
 .mainGaleria .divTotalGaleria .divGaleriaImagenes .divTituloImagenes {
   color: black;
 }
@@ -546,19 +604,18 @@
 .mainAcerca {
   display: flex;
   flex-wrap: wrap;
-  height: 152vh;
+  height: 118vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media (max-width: 768px) {
   .mainAcerca {
-    height: 100%;
+    height: 142vh;
   }
 }
 .mainAcerca .divTotalAcerca .divUnoAcerca {
   background-color: rgba(126, 76, 165, 0.9058823529);
-  margin-top: 10.5rem;
 }
 .mainAcerca .divTotalAcerca .divUnoAcerca .preguntas {
   width: 80%;
@@ -574,17 +631,23 @@
   width: 95%;
   text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
 }
+@media screen and (min-width: 768px) {
+  .mainAcerca .divTotalAcerca .divUnoAcerca .respuesta {
+    font-size: 1.1rem;
+  }
+}
 .mainAcerca .divTotalAcerca .divDosAcerca {
   margin-top: 0%;
   background-color: rgba(126, 76, 165, 0.9058823529);
 }
 .mainAcerca .divTotalAcerca .divDosAcerca .lugarEscrito .estamos {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 900;
   -webkit-text-stroke: 1.3px #dbb6ee;
   text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
 }
 .mainAcerca .divTotalAcerca .divDosAcerca .lugarEscrito .direccion {
+  font-weight: 900;
   font-size: 1.1rem;
   color: #f0d6fc;
   text-shadow: 0 0 5px black, 0 0 25px black, 0 0 50px black;
@@ -613,18 +676,17 @@
 .mainContacto {
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media (max-width: 768px) {
   .mainContacto {
-    height: 100vh;
+    height: 170vh;
+    display: flex;
+    align-items: flex-start;
   }
-}
-.mainContacto .divisorTotalForm {
-  margin-top: 7.4rem;
 }
 @media screen and (max-width: 768px) {
   .mainContacto .divisorTotalForm {
@@ -642,6 +704,12 @@
   background-color: rgba(126, 76, 165, 0.9058823529);
   height: 75vh;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .mainContacto .divisorTotalForm .formulario .divisorForm {
+    margin-top: 2vh;
+    height: 87vh;
+  }
 }
 .mainContacto .divisorTotalForm .formulario .divisorForm .divUnoform .textFormulario {
   color: black;
@@ -707,13 +775,13 @@
 .mainContacto .divisorTotalForm .introduccion {
   background-color: rgba(0, 0, 0, 0.301);
   border-radius: 1%;
+  height: 74.5vh;
 }
 @media screen and (max-width: 768px) {
   .mainContacto .divisorTotalForm .introduccion {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 17vh;
   }
 }
 .mainContacto .divisorTotalForm .introduccion .divTextContacto {
@@ -735,6 +803,7 @@
 .mainContacto .divisorTotalForm .introduccion .divDescripcion .textDescripcion {
   color: #f0d6fc;
   font-weight: 900;
+  font-size: 1.2rem;
   transition: text-shadow 50ms;
 }
 .mainContacto .divisorTotalForm .introduccion .divDescripcion .textDescripcion:hover {
@@ -782,7 +851,7 @@
   margin-top: 2%;
   font-size: 0.7rem;
 }
-.contenedorFooter .divContFooter .divDerechos .logoFooter {
+.contenedorFooter .divContFooter .divDerechos .anclaLogoFooter .logoFooter {
   display: flex;
   justify-content: center;
   align-items: center;
