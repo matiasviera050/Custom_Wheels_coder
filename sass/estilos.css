@@ -509,7 +509,7 @@
 }
 @media screen and (max-width: 768px) {
   .mainGaleria {
-    height: 542.4vh;
+    height: 100%;
   }
 }
 .mainGaleria .divTotalGaleria .divTituloGaleria {
