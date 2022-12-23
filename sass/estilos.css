@@ -328,12 +328,22 @@
 .mainProductos .divTotalProductos .divAutos .divAutosTipoUno .jdm:hover {
   box-shadow: 0 0 5px black, 0 0 25px black;
 }
+@media screen and (max-width: 768px) {
+  .mainProductos .divTotalProductos .divAutos .divAutosTipoUno .jdm {
+    width: 92%;
+  }
+}
 .mainProductos .divTotalProductos .divAutos .divAutosTipoUno .americanos {
   width: 300px;
   box-shadow: 0 0 5px black;
 }
 .mainProductos .divTotalProductos .divAutos .divAutosTipoUno .americanos:hover {
   box-shadow: 0 0 5px black, 0 0 25px black;
+}
+@media screen and (max-width: 768px) {
+  .mainProductos .divTotalProductos .divAutos .divAutosTipoUno .americanos {
+    width: 92%;
+  }
 }
 .mainProductos .divTotalProductos .divAutos .divAutosTipoUno .textoDentro {
   color: #dbb6ee;
@@ -403,6 +413,11 @@
 }
 .mainProductos .divTotalProductos .divAutosTipoDos .europeos:hover {
   box-shadow: 0 0 5px black, 0 0 25px black;
+}
+@media screen and (max-width: 768px) {
+  .mainProductos .divTotalProductos .divAutosTipoDos .europeos {
+    width: 92%;
+  }
 }
 .mainProductos .divTotalProductos .divAutosTipoDos .textoDentro {
   color: #dbb6ee;
